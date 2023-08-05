@@ -53,7 +53,7 @@ async def start_command(client: Client, message: Message):
         elif len(argument) == 2:
             try:
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
-                await client.send_message(CHANNEL_ID, message.from_user.id, message.from_user.mention)
+                await client.send_message(CHANNEL_ID, config.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
             except:
                 return
         temp_msg = await message.reply("Please wait...")
