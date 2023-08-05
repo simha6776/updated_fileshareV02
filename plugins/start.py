@@ -65,7 +65,7 @@ async def start_command(client: Client, message: Message):
             return
 
 
-        files = None
+        files = ""
         temp_msg1 = await temp_msg.edit(f"<b>ಈ ಫೈಲ್ ಒಂದು ಗಂಟೆಯ ನಂತರ ಡಿಲೀಟ್ ಆಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಈ ಫೈಲ್ ಅನ್ನು ಫಾರ್ವರ್ಡ್ ಅಥವಾ ಸೇವ್ ಮಾಡಿಕೊಳ್ಳಿ</b>")
         for msg in messages:
 
