@@ -101,8 +101,8 @@ async def start_command(client: Client, message: Message):
             #await asyncio.sleep(10)
             #await files.delete()
             #await temp_msg1.delete()
-        temp_msg1 = await temp_msg.edit(f"<b>ಈ ಫೈಲ್ ಒಂದು ಗಂಟೆಯ ನಂತರ ಡಿಲೀಟ್ ಆಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಈ ಫೈಲ್ ಅನ್ನು ಫಾರ್ವರ್ಡ್ ಅಥವಾ ಸೇವ್ ಮಾಡಿಕೊಳ್ಳಿ</b>")
-        #temp_msg1 = await client.send_message(chat_id=message.chat.id, text=f"<b>ಈ ಫೈಲ್ ಒಂದು ಗಂಟೆಯ ನಂತರ ಡಿಲೀಟ್ ಆಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಈ ಫೈಲ್ ಅನ್ನು ಫಾರ್ವರ್ಡ್ ಅಥವಾ ಸೇವ್ ಮಾಡಿಕೊಳ್ಳಿ</b>")
+        #temp_msg1 = await temp_msg.edit(f"<b>ಈ ಫೈಲ್ ಒಂದು ಗಂಟೆಯ ನಂತರ ಡಿಲೀಟ್ ಆಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಈ ಫೈಲ್ ಅನ್ನು ಫಾರ್ವರ್ಡ್ ಅಥವಾ ಸೇವ್ ಮಾಡಿಕೊಳ್ಳಿ</b>")
+        temp_msg1 = await client.send_message(chat_id=message.chat.id, text=f"<b>ಈ ಫೈಲ್ ಒಂದು ಗಂಟೆಯ ನಂತರ ಡಿಲೀಟ್ ಆಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಈ ಫೈಲ್ ಅನ್ನು ಫಾರ್ವರ್ಡ್ ಅಥವಾ ಸೇವ್ ಮಾಡಿಕೊಳ್ಳಿ</b>")
         await asyncio.sleep(3600)
         for i in files:
             await i.delete()
