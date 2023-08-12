@@ -17,7 +17,7 @@ import re
 async def date(bot, message):
     # global msg
     # msg = message.chat.id
-    message.reply("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
+    await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
         			InlineKeyboardButton("Today",callback_data = "tdy"), 
         			InlineKeyboardButton("Tommorow",callback_data = "tmr") ]]))
