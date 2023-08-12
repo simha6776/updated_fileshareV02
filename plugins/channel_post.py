@@ -13,8 +13,34 @@ import random
 import string
 import re
 
+@Client.on_message(filters.private & filters.command(["date"]))
+async def date(bot, message):
+    # global msg
+    # msg = message.chat.id
+    await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
+        			InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
+        			InlineKeyboardButton("Today",callback_data = "tdy"), 
+        			InlineKeyboardButton("Tommorow",callback_data = "tmr") ]]))
+
+global dateday
+dateday = ''
+@Client.on_callback_query(filters.regex('ystdy'))
+async def ystdy(dateday):
+    globals()['dateday'] = datetime.now()-timedelta(1)
+	
+@Client.on_callback_query(filters.regex('tdy'))
+async def tdy(dateday):
+    globals()['dateday'] = datetime.now()
+	
+@Client.on_callback_query(filters.regex('tmr'))
+async def tmr(dateday):
+    globals()['dateday'] = datetime.now()+timedelta(1)
+
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.command(['start','users','broadcast','batch','genlink','stats']))
 async def channel_post(client: Client, message: Message):
+    if dateday is '':
+        date(bot, message)
+        
     dateexc = datetime.now().strftime("%d")
     media = message.video or message.document
     filname= media.file_name.split("S0")[0]#[1][2]etc
@@ -55,7 +81,7 @@ async def channel_post(client: Client, message: Message):
     #await reply_text.edit(f"<b>Here is your link</b>\n\n{Tlink}\n\n<code>{Tlink}</code>", reply_markup=reply_markup, disable_web_page_preview = True)
     
     Slink = get_short(SL_URL,SL_API,Tlink)
-    await e_pic.edit(FOMET.format(Slink, Slink))
+    await e_pic.edit(FOMET.format(dateday.strftime("%d-%m-%Y"), Slink, Slink))
  #   if not DISABLE_CHANNEL_BUTTON:
  #       await post_message.edit_reply_markup(reply_markup)
 
