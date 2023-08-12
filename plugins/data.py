@@ -11,11 +11,11 @@ odd = {
 'Gattimela_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5407544/list/00000065bc1e33dd18bb44e09c42275abe57cd44.jpg',];
 'Manemagalu_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5407602/list/00000150423451e6856f46d9b136e5bfc0f3b06d.jpg',];
 'Sandhyaraaga_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5407569/list/000001479ea2347355e54780ad4e16a3f8407c85.jpg',];
-'SeethaRaama_':[];
+'SeethaRaama_':['https://akamaividz2.zee5.com/image/upload/resources/0-6-4z5359283/list/1170x658withlogo166d1d2e5df44be2892a295293392b5e.jpg',];
 'Amruthadhaare_':['https://akamaividz2.zee5.com/image/upload/resources/0-6-4z5364077/list/1170x658withlogo8769f31132de46d39a97d2fd524a30c0.jpg',];
 'Mahanayaka_Dr_B_R_Ambedkar_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5403078/list/00000181c4f38dfde0494f6ba25963be14984ad7.jpg',];
 'Shrirasthu_Shubhamasthu_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5407897/list/00000164b53a6ebbe3794dac854e5d73b72517b8.jpg',];
-'Soubhagyavati_Bhava_':[];
+'Soubhagyavati_Bhava_':['https://akamaividz2.zee5.com/image/upload/resources/0-6-4z5363757/list/1170x658withlogod3dbd18bddbe42e881e39aebeb68d66b.jpg',];
 'Hitler_Kalyana_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5407717/list/000001392edaa9522bee4002bfd7a142c86c30b6.jpg',];
 'Sathya_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5407516/list/0000011143160c0020a94c3298ccfd6f671c761f.jpg',];
 'Dance_Karnataka_Dance_Season_7_':['https://akamaividz2.zee5.com/image/upload/resources/0-1-6z5403328/list/000003350ba2f10b747f44afa9aaf81cb6e1649b.jpg',];
