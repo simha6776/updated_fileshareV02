@@ -25,7 +25,7 @@
 
 #ColorsKannada
 ODD = {
-        'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','','',''],
+        'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','omegalinks.in','e63e656116a75bff16fbeaad6be822e7eb037f60',''],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','','',''],
         'Kalyanamasthu_':['https://graph.org/file/db7a3d7d1a2654540cf99.jpg','','',''],
         'Vaidehi_Parinaya_':['https://graph.org/file/8c7eda434e1f0baae0b81.jpg','','',''],
