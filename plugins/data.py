@@ -24,7 +24,7 @@
 # 'Chota_Champion_':['https://akamaividz2.zee5.com/image/upload/resources/0-6-4z5351454/list/1170x658withlogod8c4d3a2969645ff820d4539bbb8bd4a.jpg',];
 
 #ColorsKannada
-odd = {
+ODD = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','','',''],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','','',''],
         'Kalyanamasthu_':['https://graph.org/file/db7a3d7d1a2654540cf99.jpg','','',''],
@@ -84,7 +84,7 @@ odd = {
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','','','']
 }
 
-even = {
+EVEN = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','','',''],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','','',''],
         'Kalyanamasthu_':['https://graph.org/file/db7a3d7d1a2654540cf99.jpg','','',''],
