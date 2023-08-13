@@ -11,6 +11,7 @@ from helper_func import encode
 import requests
 import string
 import re
+from cbb import datee
 from pyshorteners import Shortener
 import aiohttp
 
@@ -18,10 +19,12 @@ import aiohttp
 async def date(bot, message):
     reply_markup = InlineKeyboardMarkup(
             [
-                [ 
+                [
+                    [
         			InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
         			InlineKeyboardButton("Today",callback_data = "tdy"), 
-        			InlineKeyboardButton("Tommorow",callback_data = "tmr") ],
+        			InlineKeyboardButton("Tommorow",callback_data = "tmr") 
+                    ],
                     [
                         InlineKeyboardButton("🔒 Close",callback_data = "close")
                     ]
