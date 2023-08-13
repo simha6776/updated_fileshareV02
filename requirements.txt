@@ -9,3 +9,4 @@ dnspython
 aiohttp
 requests
 bs4
+pyshorteners
