@@ -1,3 +1,28 @@
+specification_API='''
+
+omegalinks.in
+
+Jayant - e63e656116a75bff16fbeaad6be822e7eb037f60
+
+Kuran - 77e02a4b4c630263e38228964043aed8d222d1e7
+
+ashokhalmath - 15d91bfa7a9e55f361e3c929d2286dd944ed8b93
+
+Abhiram580 - b0856b4d49bb7288d64e25ab83e5efc004b4b340
+
+
+moneycase.link
+
+Jayant - e9872aa279e0a57e59cf4ef3d20bea8c3be0571d
+
+Kiran - 19493fe3f9dea264d98650a31cb63683043e7fb4
+
+ashokhalmath - 3353ec87137e166f8561b86284728bd93e1b8bdf
+
+Abhiram580 - 1ce2b97c939498eecfa3002624a54f100eab8cbe
+
+'''
+
 ODD = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','moneycase.link','3353ec87137e166f8561b86284728bd93e1b8bdf',''],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
