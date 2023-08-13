@@ -7,13 +7,12 @@ import pytz
 from config import OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
-set_timezone = pytz.timezone('Asia/Kolkata')
-global dateday
-dateday = [1]
+india = pytz.timezone("Asia/Kolkata")
+global DATEDAY
+dateday = []
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
-   
     if data == "about":
         await query.message.edit_text(
             text = f"<b>○ Creator : <a href='https://t.me/link_serials'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://t.me/dj_serials_bot'>Click here</a>\n○ Channel : @link_serials\n○ Support Group : @dj_serials_bot</b>",
@@ -33,31 +32,20 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         except:
             pass
             
-    elif query.data == "ystdy":
-        dateday.clear()
-        xx = datetime.now(set_timezone)-timedelta(1)
-        x = xx.strftime("%d-%m-%Y")
-        dateday.append(x)
-        await query.message.edit_text(
-            text="Dete set to Yesterday.."
-        )
-        
-    elif query.data == "tdy":
-        dateday.clear()
-        yy = datetime.now(set_timezone)
-        y = yy.strftime("%d-%m-%Y")
-        dateday.append(y)
-        await query.message.edit_text(
-            text="Dete set to Today.."
-        )
-    elif query.data == "tmr":
-        dateday.clear()
-        zz = datetime.now(set_timezone)+timedelta(1)
-        z = zz.strftime("%d-%m-%Y")
-        dateday.append(z)
-        await query.message.edit_text(
-            text="Dete set to Tomorrow.."
-        )
+    elif data == "ystdy":
+        DATEDAY.clear()
+        ye = datetime.now(india)-timedelta(1)
+        DATEDAY.append(str(ye.strftime("%d⚡%m⚡%Y")))
+        await query.message.edit_text(text = f"Date change to {DATEDAY}")
+    elif data == "tdy":
+        DATEDAY.clear()
+        tda = datetime.now(india)
+        DATEDAY.append(str(tda.strftime("%d⚡%m⚡%Y")))
+        await query.message.edit_text(text = f"Date change to {DATEDAY}")
+    elif data == "tmr":
+        DATEDAY.clear()
+        tm = datetime.now(india)+timedelta(1)
+        DATEDAY.append(str(tm.strftime("%d⚡%m⚡%Y")))
+        await query.message.edit_text(text = f"Date change to {DATEDAY}")
     else:
         pass
-    return
