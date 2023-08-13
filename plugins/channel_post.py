@@ -17,7 +17,7 @@ import aiohttp
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
-    reply_markup = InlineKeyboardMarkup(
+    reply_markupp = InlineKeyboardMarkup(
             [
                 [
                     [
@@ -34,9 +34,7 @@ async def date(bot, message):
         )
     await message.reply_text(
         text = "Select Date.........",
-        reply_markup = reply_markup,
-        disable_web_page_preview = True,
-        quote = True
+        reply_markup = reply_markupp
     )
     return
     
