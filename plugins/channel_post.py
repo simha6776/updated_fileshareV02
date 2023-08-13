@@ -30,6 +30,7 @@ async def date(bot, message):
 dateday = [1]
 @Bot.on_callback_query()
 async def date_handler(client: Bot, query: CallbackQuery, datetime, dateday):
+    await query.answer()
     if query.data == "close_data":
         await query.message.delete()
         try:
