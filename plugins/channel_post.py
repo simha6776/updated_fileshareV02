@@ -12,6 +12,8 @@ import requests
 import random
 import string
 import re
+from pyshorteners import Shortener
+import aiohttp
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
@@ -84,21 +86,18 @@ async def channel_post(client: Client, message: Message):
      #   if not DISABLE_CHANNEL_BUTTON:
      #       await post_message.edit_reply_markup(reply_markup)
 
-def aliyas():
-    """Generate a random 8-letter alphanumeric string."""
-    characters = string.ascii_letters + string.digits
-    random_chars = ''.join(random.choice(characters) for _ in range(8))
-    return random_chars
-    
-
-
-def get_short(SL_URL,SL_API,Tlink):
-    rget = requests.get(f"https://{SL_URL}/api?api={SL_API}&url={Tlink}&alias={aliyas()}")
-    rjson = rget.json()
-    if rjson["status"] == "success" or rget.status_code == 200:
-        return rjson["shortenedUrl"]
-    else:
+async def get_short(SL_URL, SL_API, Tlink):
+    # FireLinks shorten
+    try:
+        api_url = f"https://{SL_URL}/api"
+        params = {'api': SL_API, 'url': Tlink}
+        async with aiohttp.ClientSession() as session:
+            async with session.get(api_url, params=params, raise_for_status=True) as response:
+                data = await response.json()
+                url = data["shortenedUrl"]
         return url
+    except Exception as error:
+        return error
 
 @Bot.on_message(filters.channel & filters.incoming & filters.chat(CHANNEL_ID))
 async def new_post(client: Client, message: Message):
