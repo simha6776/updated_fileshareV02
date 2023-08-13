@@ -13,10 +13,8 @@ import random
 import string
 import re
 
-@Bot.on_message(filters.private & filters.command(["date"]))
+@Bot.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
-    # global msg
-    # msg = message.chat.id
     await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
         			InlineKeyboardButton("Today",callback_data = "tdy"), 
@@ -24,7 +22,7 @@ async def date(bot, message):
 
 
 global dateday
-dateday = ''
+dateday = datetime.now()
 @Bot.on_callback_query(filters.regex('ystdy'))
 async def ystdy(dateday):
     globals()['dateday'] = datetime.now()-timedelta(1)
@@ -40,9 +38,6 @@ async def tmr(dateday):
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
 async def channel_post(client: Client, message: Message):
-    # if dateday == '':
-    #     date(bot, message)
-    # else:
         dateexc = datetime.now().strftime("%d")
         media = message.video or message.document
         filname= media.file_name.split("S0")[0]#[1][2]etc
