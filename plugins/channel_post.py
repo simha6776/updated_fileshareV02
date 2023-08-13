@@ -28,7 +28,7 @@ async def date(bot, message):
 
 #global dateday
 dateday = []
-@Client.on_callback_query()
+@Bot.on_callback_query()
 async def date_handler(client: Client, query: CallbackQuery, datetime, dateday):
     if query.data == "close_data":
         await query.message.delete()
@@ -37,17 +37,26 @@ async def date_handler(client: Client, query: CallbackQuery, datetime, dateday):
         xx = datetime.now()-timedelta(1)
         x = xx.strftime("%d-%m-%Y")
         dateday.append(x)
+        await query.message.edit_text(
+            text="Dete set to Yesterday.."
+        )
         
     elif query.data == "tdy":
         dateday.clear()
         yy = datetime.now()
         y = xx.strftime("%d-%m-%Y")
         dateday.append(y)
+        await query.message.edit_text(
+            text="Dete set to Today.."
+        )
     elif query.data == "tmr":
         dateday.clear()
         zz = datetime.now()+timedelta(1)
         z = xx.strftime("%d-%m-%Y")
         dateday.append(z)
+        await query.message.edit_text(
+            text="Dete set to Tomorrow.."
+        )
     else:
         pass
         
