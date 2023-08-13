@@ -9,7 +9,6 @@ from config import ADMINS, CHANNEL_ID, DISABLE_CHANNEL_BUTTON, FOMET
 from datetime import datetime, timedelta
 from helper_func import encode
 import requests
-import random
 import string
 import re
 from pyshorteners import Shortener
@@ -27,15 +26,18 @@ global dateday
 dateday = datetime.now()
 @Bot.on_callback_query(filters.regex('ystdy'))
 async def ystdy(dateday):
-    await globals()['dateday'] = datetime.now()-timedelta(1)
+    await x = datetime.now()-timedelta(1)
+    await globals()['dateday'] = x
     
 @Bot.on_callback_query(filters.regex('tdy'))
 async def tdy(dateday):
-    await globals()['dateday'] = datetime.now()
+    await y = datetime.now()
+    await globals()['dateday'] = y
  
 @Bot.on_callback_query(filters.regex('tmr'))
 async def tmr(dateday):
-    await globals()['dateday'] = datetime.now()+timedelta(1)
+    await z = datetime.now()+timedelta(1)
+    await globals()['dateday'] = z
     
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
