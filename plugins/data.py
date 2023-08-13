@@ -67,7 +67,7 @@ ODD = {
         'Sathya_':['https://graph.org/file/7f30ff54ecf9b380e4634.jpg','omegalinks.in','77e02a4b4c630263e38228964043aed8d222d1e7',''],
         'Dance_Karnataka_Dance_Season_7_':['https://graph.org/file/2d724f7a19f736c405990.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','omegalinks.in','15d91bfa7a9e55f361e3c929d2286dd944ed8b93',''],
-        'Couples_Kitchen_':['https://graph.org/file/fa897d25d4d944e8487d5.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
+        'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
           
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','omegalinks.in','77e02a4b4c630263e38228964043aed8d222d1e7',''],
@@ -127,7 +127,7 @@ EVEN = {
         'Sathya_':['https://graph.org/file/7f30ff54ecf9b380e4634.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Dance_Karnataka_Dance_Season_7_':['https://graph.org/file/2d724f7a19f736c405990.jpg','omegalinks.in','77e02a4b4c630263e38228964043aed8d222d1e7',''],
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
-        'Couples_Kitchen_':['https://graph.org/file/fa897d25d4d944e8487d5.jpg','omegalinks.in','e63e656116a75bff16fbeaad6be822e7eb037f60',''],
+        'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','omegalinks.in','e63e656116a75bff16fbeaad6be822e7eb037f60',''],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','omegalinks.in','15d91bfa7a9e55f361e3c929d2286dd944ed8b93',''],
           
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
