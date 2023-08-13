@@ -19,27 +19,38 @@ async def date(bot, message):
     await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
         			InlineKeyboardButton("Today",callback_data = "tdy"), 
-        			InlineKeyboardButton("Tommorow",callback_data = "tmr") ]]))
+        			InlineKeyboardButton("Tommorow",callback_data = "tmr") ],
+                    [
+                        InlineKeyboardButton("Close",callback_data = "close_data")
+                    ]
+                                                                                                 
+                ]))
 
 #global dateday
 dateday = []
-@Bot.on_callback_query(filters.regex('ystdy'))
-async def ystdy(dateday):
-    xx = datetime.now()-timedelta(1)
-    x = xx.strftime("%d-%m-%Y")
-    await dateday.append(x)
-    
-@Bot.on_callback_query(filters.regex('tdy'))
-async def tdy(dateday):
-    y = datetime.now()
-    y = yy.strftime("%d-%m-%Y")
-    await dateday.append(y)
-    
-@Bot.on_callback_query(filters.regex('tmr'))
-async def tmr(dateday):
-    zz = datetime.now()+timedelta(1)
-    z = zz.strftime("%d-%m-%Y")
-    await dateday.append(z)
+@Client.on_callback_query()
+async def cb_handler(client: Client, query: CallbackQuery):
+    if query.data == "close_data":
+        await query.message.delete()
+    elif query.data == "ystdy":
+        dateday.clear()
+        xx = datetime.now()-timedelta(1)
+        x = xx.strftime("%d-%m-%Y")
+        dateday.append(x)
+        
+    elif query.data == "tdy":
+        dateday.clear()
+        yy = datetime.now()
+        y = xx.strftime("%d-%m-%Y")
+        dateday.append(y)
+    elif query.data == "tmr":
+        dateday.clear()
+        zz = datetime.now()+timedelta(1)
+        z = xx.strftime("%d-%m-%Y")
+        dateday.append(z)
+    else:
+        pass
+        
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
 async def channel_post(client: Client, message: Message):
