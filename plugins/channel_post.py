@@ -20,21 +20,13 @@ async def date(bot, message):
     await message.reply_text(
         text = "Select Date.........",
         reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    [
-        	            InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
-                    	InlineKeyboardButton("Today",callback_data = "tdy"), 
-                    	InlineKeyboardButton("Tommorow",callback_data = "tmr") 
+            [[[InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
+                    InlineKeyboardButton("Today",callback_data = "tdy"), 
+                    InlineKeyboardButton("Tommorow",callback_data = "tmr") 
                     ],
                     [
-                        InlineKeyboardButton("🔒 Close",callback_data = "close")
-                    ]
-                                                                                                 
-                ]
-            ]
-        )
-    )
+                    InlineKeyboardButton("🔒 Close",callback_data = "close")
+                    ]]]))
     return
     
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
