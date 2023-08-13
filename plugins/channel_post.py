@@ -23,7 +23,7 @@ async def date(bot, message):
 
 
 #global dateday
-dateday = [datetime.now()]
+dateday = [datetime.now().strftime("%d-%m-%Y")]
 @Bot.on_callback_query(filters.regex('ystdy'))
 async def ystdy(dateday):
     xx = datetime.now()-timedelta(1)
