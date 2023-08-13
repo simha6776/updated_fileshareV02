@@ -27,15 +27,15 @@ global dateday
 dateday = datetime.now()
 @Bot.on_callback_query(filters.regex('ystdy'))
 async def ystdy(dateday):
-    globals()['dateday'] = datetime.now()-timedelta(1)
+    await globals()['dateday'] = datetime.now()-timedelta(1)
     
 @Bot.on_callback_query(filters.regex('tdy'))
 async def tdy(dateday):
-    globals()['dateday'] = datetime.now()
+    await globals()['dateday'] = datetime.now()
  
 @Bot.on_callback_query(filters.regex('tmr'))
 async def tmr(dateday):
-    globals()['dateday'] = datetime.now()+timedelta(1)
+    await globals()['dateday'] = datetime.now()+timedelta(1)
     
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
@@ -51,7 +51,7 @@ async def channel_post(client: Client, message: Message):
                 SL_API=ODD[filname][2]
                 #e_pic = await client.send_photo(chat_id=chtid, photo=pic, caption=f"🔥please wait....")
                 e_pic = await client.send_photo(message.chat.id, photo=pic, caption=f"🔥please wait....")
-                await asyncio.sleep(1)
+                await asyncio.sleep(5)
         elif int(dateexc) % 2 == 0:
             if filname in media.file_name:
                 # chtid=int(EVEN[filname][3])
