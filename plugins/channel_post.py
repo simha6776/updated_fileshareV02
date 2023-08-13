@@ -22,25 +22,25 @@ async def date(bot, message):
         			InlineKeyboardButton("Tommorow",callback_data = "tmr") ]]))
 
 
-global dateday
-dateday = datetime.now()
+#global dateday
+dateday = [datetime.now()]
 @Bot.on_callback_query(filters.regex('ystdy'))
 async def ystdy(dateday):
-    x = datetime.now()-timedelta(1)
-    globals()['dateday'] = x
-    await print(dateday)
+    xx = datetime.now()-timedelta(1)
+    x = xx.strftime("%d-%m-%Y")
+    await dateday.append(x)
     
 @Bot.on_callback_query(filters.regex('tdy'))
 async def tdy(dateday):
     y = datetime.now()
-    globals()['dateday'] = y
-    await print(dateday)
+    y = yy.strftime("%d-%m-%Y")
+    await dateday.append(y)
     
 @Bot.on_callback_query(filters.regex('tmr'))
 async def tmr(dateday):
-    z = datetime.now()+timedelta(1)
-    globals()['dateday'] = z
-    await print(dateday)
+    zz = datetime.now()+timedelta(1)
+    z = zz.strftime("%d-%m-%Y")
+    await dateday.append(z)
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
 async def channel_post(client: Client, message: Message):
@@ -86,7 +86,7 @@ async def channel_post(client: Client, message: Message):
         #await reply_text.edit(f"<b>Here is your link</b>\n\n{Tlink}\n\n<code>{Tlink}</code>", reply_markup=reply_markup, disable_web_page_preview = True)
         
         Slink = await get_short(SL_URL,SL_API,Tlink)
-        await e_pic.edit(FOMET.format(dateday.strftime("%d-%m-%Y"), Slink, Slink))
+        await e_pic.edit(FOMET.format(dateday[-1], Slink, Slink))
      #   if not DISABLE_CHANNEL_BUTTON:
      #       await post_message.edit_reply_markup(reply_markup)
 
