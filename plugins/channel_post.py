@@ -13,7 +13,7 @@ import random
 import string
 import re
 
-@Client.on_message(filters.private & filters.command(["date"]))
+@Bot.on_message(filters.private & filters.command(["date"]))
 async def date(bot, message):
     # global msg
     # msg = message.chat.id
@@ -25,15 +25,15 @@ async def date(bot, message):
 
 global dateday
 dateday = ''
-@Client.on_callback_query(filters.regex('ystdy'))
+@Bot.on_callback_query(filters.regex('ystdy'))
 async def ystdy(dateday):
     globals()['dateday'] = datetime.now()-timedelta(1)
     
-@Client.on_callback_query(filters.regex('tdy'))
+@Bot.on_callback_query(filters.regex('tdy'))
 async def tdy(dateday):
     globals()['dateday'] = datetime.now()
  
-@Client.on_callback_query(filters.regex('tmr'))
+@Bot.on_callback_query(filters.regex('tmr'))
 async def tmr(dateday):
     globals()['dateday'] = datetime.now()+timedelta(1)
     
