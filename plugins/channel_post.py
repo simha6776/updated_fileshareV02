@@ -21,7 +21,6 @@ async def date(bot, message):
         			InlineKeyboardButton("Today",callback_data = "tdy"), 
         			InlineKeyboardButton("Tommorow",callback_data = "tmr") ]]))
 
-
 #global dateday
 dateday = []
 @Bot.on_callback_query(filters.regex('ystdy'))
