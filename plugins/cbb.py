@@ -3,9 +3,11 @@
 from pyrogram import __version__
 from bot import Bot
 from datetime import timedelta, datetime
+import pytz
 from config import OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
+set_timezone = pytz.timezone('Asia/Kolkata')
 global dateday
 dateday = [1]
 @Bot.on_callback_query()
@@ -33,7 +35,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             
     elif query.data == "ystdy":
         dateday.clear()
-        xx = datetime.now()-timedelta(1)
+        xx = datetime.now(set_timezone)-timedelta(1)
         x = xx.strftime("%d-%m-%Y")
         dateday.append(x)
         await query.message.edit_text(
@@ -42,7 +44,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         
     elif query.data == "tdy":
         dateday.clear()
-        yy = datetime.now()
+        yy = datetime.now(set_timezone)
         y = yy.strftime("%d-%m-%Y")
         dateday.append(y)
         await query.message.edit_text(
@@ -50,7 +52,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif query.data == "tmr":
         dateday.clear()
-        zz = datetime.now()+timedelta(1)
+        zz = datetime.now(set_timezone)+timedelta(1)
         z = zz.strftime("%d-%m-%Y")
         dateday.append(z)
         await query.message.edit_text(
