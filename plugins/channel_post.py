@@ -27,7 +27,7 @@ async def date(bot, message):
                 ]))
 
 #global dateday
-dateday = []
+dateday = [1]
 @Bot.on_callback_query()
 async def date_handler(client: Client, query: CallbackQuery, datetime, dateday):
     if query.data == "close_data":
