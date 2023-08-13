@@ -27,11 +27,11 @@ async def channel_post(client: Client, message: Message):
             pic=ODD[filname][0]
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
-            bot_msg = await client.ask(text = f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b> \n\n<b>⚠️Note your remaining time only 60 seconds</b>", chat_id = message.from_user.id, reply_markup=InlineKeyboardMarkup([[ 
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]),timeout=60)
-            await asyncio.sleep(2)
+            await asyncio.sleep(30)
             e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
             await asyncio.sleep(2)
     elif int(dateexc) % 2 == 0:
@@ -41,11 +41,11 @@ async def channel_post(client: Client, message: Message):
             pic=EVEN[filname][0]
             SL_URL=EVEN[filname][1]
             SL_API=EVEN[filname][2]
-            bot_msg = await client.ask(text = f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b> \n\n<b>⚠️Note your remaining time only 60 seconds</b>", chat_id = message.from_user.id, reply_markup=InlineKeyboardMarkup([[ 
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]),timeout=60)
-            await asyncio.sleep(2)
+            await asyncio.sleep(30)
             e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
             await asyncio.sleep(2)
        #     bot_msg = await message.reply_text("Please Wait...!", quote = True)
