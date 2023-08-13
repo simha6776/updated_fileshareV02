@@ -23,12 +23,12 @@ async def date(bot, message):
             [
                 [
                     [
-        	InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
-        	InlineKeyboardButton("Today",callback_data = "tdy"), 
-        	InlineKeyboardButton("Tommorow",callback_data = "tmr") 
+        	            InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
+                    	InlineKeyboardButton("Today",callback_data = "tdy"), 
+                    	InlineKeyboardButton("Tommorow",callback_data = "tmr") 
                     ],
                     [
-                    InlineKeyboardButton("🔒 Close",callback_data = "close")
+                        InlineKeyboardButton("🔒 Close",callback_data = "close")
                     ]
                                                                                                  
                 ]
