@@ -37,13 +37,13 @@ async def channel_post(client: Client, message: Message):
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
     global Slink
     Slink = await get_short(SL_URL, SL_API, Tlink)
-
+    global pic
+    pic = None
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
             #chtid=int(-1001748750847)
             # chtid=int(ODD[filname][3])
-            global pic
-            pic=ODD[filname][0]
+            globals()['pic']=ODD[filname][0]
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
             bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
