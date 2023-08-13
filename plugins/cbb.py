@@ -9,7 +9,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 global dateday
 dateday = [1]
 @Bot.on_callback_query()
-async def cb_handler(client: Bot, query: CallbackQuery, datetime, datetime, dateday):
+async def cb_handler(client: Bot, query: CallbackQuery, datetime, timedelta, dateday):
     data = query.data
    
     if data == "about":
