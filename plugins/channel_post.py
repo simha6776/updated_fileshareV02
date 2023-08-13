@@ -81,8 +81,8 @@ async def channel_post(client: Client, message: Message):
     #    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={Tlink}')]])
         #await reply_text.edit(f"<b>Here is your link</b>\n\n{Tlink}\n\n<code>{Tlink}</code>", reply_markup=reply_markup, disable_web_page_preview = True)
         
-        Slink = get_short(SL_URL,SL_API,Tlink)
-        await e_pic.edit(FOMET.format(dateday, Slink, Slink))
+        Slink = await get_short(SL_URL,SL_API,Tlink)
+        await e_pic.edit(FOMET.format(dateday.strftime("%d-%m-%Y"), Slink, Slink))
      #   if not DISABLE_CHANNEL_BUTTON:
      #       await post_message.edit_reply_markup(reply_markup)
 
