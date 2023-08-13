@@ -1,11 +1,24 @@
 #(©)Codexbotz
-
+import time
+import aiohttp
+import asyncio
+from pyrogram import filters, Client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from pyrogram.errors import FloodWait
+from plugins.data import FOMET, BOTEFITMSG, ODD, EVEN
+from plugins.channel_post import pic, Tlink, Slink
+from plugins.cbb import DATEDAY
+from bot import Bot
+from config import ADMINS, CHANNEL_ID, DISABLE_CHANNEL_BUTTON, OWNER_ID
+from helper_func import encode
+from pyshorteners import Shortener
+import string
+import re
 from pyrogram import __version__
 from bot import Bot
 from datetime import timedelta, datetime
 import pytz
-from config import OWNER_ID
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+
 
 india = pytz.timezone("Asia/Kolkata")
 global DATEDAY
@@ -36,16 +49,31 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         DATEDAY.clear()
         ye = datetime.now(india)-timedelta(1)
         DATEDAY.append(str(ye.strftime("%d - %m - %Y")))
-        await query.message.edit_text(text = f"Date change to {DATEDAY}")
+        # await query.message.edit_text(text = f"Date change to {DATEDAY}")
+        
+        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
+        await time.sleep(3)
+        await query.message.edit_text(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
+        await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
         DATEDAY.append(str(tda.strftime("%d - %m - %Y")))
-        await query.message.edit_text(text = f"Date change to {DATEDAY}")
+        # await query.message.edit_text(text = f"Date change to {DATEDAY}")
+
+        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
+        await time.sleep(3)
+        await query.message.edit_text(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
+        await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
         DATEDAY.append(str(tm.strftime("%d - %m - %Y")))
-        await query.message.edit_text(text = f"Date change to {DATEDAY}")
+        # await query.message.edit_text(text = f"Date change to {DATEDAY}")
+
+        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
+        await time.sleep(3)
+        await query.message.edit_text(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
+        await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     else:
         pass
