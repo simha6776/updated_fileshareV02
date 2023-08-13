@@ -21,7 +21,7 @@ async def date(bot, message):
         			InlineKeyboardButton("Today",callback_data = "tdy"), 
         			InlineKeyboardButton("Tommorow",callback_data = "tmr") ],
                     [
-                        InlineKeyboardButton("Close",callback_data = "close_data")
+                        InlineKeyboardButton("🔒 Close",callback_data = "close")
                     ]
                                                                                                  
                 ]))
@@ -30,14 +30,14 @@ async def date(bot, message):
 dateday = [1]
 @Bot.on_callback_query()
 async def date_handler(client: Bot, query: CallbackQuery, datetime, dateday):
-    await query.answer()
-    if query.data == "close_data":
-        await query.message.delete()
-        try:
-            await query.message.reply_to_message.delete()
-        except:
-            pass
-    elif query.data == "ystdy":
+    # await query.answer()
+    # if query.data == "close_data":
+    #     await query.message.delete()
+    #     try:
+    #         await query.message.reply_to_message.delete()
+    #     except:
+    #         pass
+    if query.data == "ystdy":
         dateday.clear()
         xx = datetime.now()-timedelta(1)
         x = xx.strftime("%d-%m-%Y")
