@@ -46,7 +46,7 @@ async def channel_post(client: Client, message: Message):
             pic=ODD[filname][0]
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
-            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
@@ -62,7 +62,7 @@ async def channel_post(client: Client, message: Message):
             globals()['pic'] = EVEN[filname][0]
             SL_URL=EVEN[filname][1]
             SL_API=EVEN[filname][2]
-            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
