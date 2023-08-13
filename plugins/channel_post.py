@@ -16,7 +16,9 @@ import aiohttp
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
-    await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
+    reply_markup = InlineKeyboardMarkup(
+            [
+                [ 
         			InlineKeyboardButton("Yesterday",callback_data = "ystdy"), 
         			InlineKeyboardButton("Today",callback_data = "tdy"), 
         			InlineKeyboardButton("Tommorow",callback_data = "tmr") ],
@@ -24,48 +26,17 @@ async def date(bot, message):
                         InlineKeyboardButton("🔒 Close",callback_data = "close")
                     ]
                                                                                                  
-                ]))
-
-#global dateday
-dateday = [1]
-@Bot.on_callback_query()
-async def date_handler(client: Bot, query: CallbackQuery, datetime, dateday):
-    # await query.answer()
-    # if query.data == "close_data":
-    #     await query.message.delete()
-    #     try:
-    #         await query.message.reply_to_message.delete()
-    #     except:
-    #         pass
-    if query.data == "ystdy":
-        dateday.clear()
-        xx = datetime.now()-timedelta(1)
-        x = xx.strftime("%d-%m-%Y")
-        dateday.append(x)
-        await query.message.edit_text(
-            text="Dete set to Yesterday.."
+                ]
+            ]
         )
-        
-    elif query.data == "tdy":
-        dateday.clear()
-        yy = datetime.now()
-        y = yy.strftime("%d-%m-%Y")
-        dateday.append(y)
-        await query.message.edit_text(
-            text="Dete set to Today.."
-        )
-    elif query.data == "tmr":
-        dateday.clear()
-        zz = datetime.now()+timedelta(1)
-        z = zz.strftime("%d-%m-%Y")
-        dateday.append(z)
-        await query.message.edit_text(
-            text="Dete set to Tomorrow.."
-        )
-    else:
-        pass
-        
-
+    await message.reply_text(
+        text = "Select Date.........",
+        reply_markup = reply_markup,
+        disable_web_page_preview = True,
+        quote = True
+    )
+    return
+    
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
 async def channel_post(client: Client, message: Message):
         dateexc = datetime.now().strftime("%d")
