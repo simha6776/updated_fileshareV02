@@ -8,7 +8,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 
 dateday = [1]
 @Bot.on_callback_query()
-async def cb_handler(client: Bot, query: CallbackQuery, datetime):
+async def cb_handler(client: Bot, query: CallbackQuery, datetime, dateday):
     data = query.data
    
     if data == "about":
@@ -57,6 +57,6 @@ async def cb_handler(client: Bot, query: CallbackQuery, datetime):
         )
     else:
         pass
-    return
+    return dateday
 
-datee = dateday[-1]
+datee = cb_handler(client: Bot, query: CallbackQuery, datetime, dateday)
