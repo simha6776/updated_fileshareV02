@@ -69,7 +69,7 @@ async def channel_post(client: Client, message: Message):
     
     
     Slink = await get_short(SL_URL, SL_API, Tlink)
-    await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
+    await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
     await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     
 async def get_short(SL_URL, SL_API, Tlink):
