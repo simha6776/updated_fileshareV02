@@ -15,7 +15,6 @@ from plugins.cbb import DATEDAY
 from pyshorteners import Shortener
 import aiohttp
 
-datee = str(DATEDAY[-1])
 @Bot.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
     reply_markup = InlineKeyboardMarkup(
@@ -85,7 +84,7 @@ async def channel_post(client: Client, message: Message):
         #await reply_text.edit(f"<b>Here is your link</b>\n\n{Tlink}\n\n<code>{Tlink}</code>", reply_markup=reply_markup, disable_web_page_preview = True)
         
         Slink = await get_short(SL_URL,SL_API,Tlink)
-        await e_pic.edit(FOMET.format(datee, Slink, Slink))
+        await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
      #   if not DISABLE_CHANNEL_BUTTON:
      #       await post_message.edit_reply_markup(reply_markup)
 
