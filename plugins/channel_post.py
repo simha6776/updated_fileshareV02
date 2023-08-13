@@ -29,9 +29,13 @@ async def date(bot, message):
 #global dateday
 dateday = [1]
 @Bot.on_callback_query()
-async def date_handler(client: Bot, query: CallbackQuery, message: Message, datetime, dateday):
+async def date_handler(client: Bot, query: CallbackQuery, datetime, dateday):
     if query.data == "close_data":
         await query.message.delete()
+        try:
+            await query.message.reply_to_message.delete()
+        except:
+            pass
     elif query.data == "ystdy":
         dateday.clear()
         xx = datetime.now()-timedelta(1)
