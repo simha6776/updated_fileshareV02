@@ -44,7 +44,7 @@ async def date_handler(client: Client, query: CallbackQuery, message: Message, d
     elif query.data == "tdy":
         dateday.clear()
         yy = datetime.now()
-        y = xx.strftime("%d-%m-%Y")
+        y = yy.strftime("%d-%m-%Y")
         dateday.append(y)
         await query.message.edit_text(
             text="Dete set to Today.."
@@ -52,7 +52,7 @@ async def date_handler(client: Client, query: CallbackQuery, message: Message, d
     elif query.data == "tmr":
         dateday.clear()
         zz = datetime.now()+timedelta(1)
-        z = xx.strftime("%d-%m-%Y")
+        z = zz.strftime("%d-%m-%Y")
         dateday.append(z)
         await query.message.edit_text(
             text="Dete set to Tomorrow.."
