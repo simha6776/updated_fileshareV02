@@ -56,4 +56,6 @@ async def cb_handler(client: Bot, query: CallbackQuery, datetime):
         )
     else:
         pass
-    return dateday
+    return
+
+datee = dateday[-1]
