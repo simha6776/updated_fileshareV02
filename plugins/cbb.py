@@ -6,6 +6,7 @@ import datetime
 from config import OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
+global dateday
 dateday = [1]
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery, datetime, dateday):
@@ -57,6 +58,4 @@ async def cb_handler(client: Bot, query: CallbackQuery, datetime, dateday):
         )
     else:
         pass
-    return dateday
-
-datee = cb_handler(client: Bot, query: CallbackQuery, datetime, dateday)
+    return
