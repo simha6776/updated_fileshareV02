@@ -9,7 +9,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 global dateday
 dateday = [1]
 @Bot.on_callback_query()
-async def cb_handler(client: Bot, query: CallbackQuery, dt: datetime, td: timedelta, dated: dateday):
+async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
    
     if data == "about":
@@ -32,8 +32,8 @@ async def cb_handler(client: Bot, query: CallbackQuery, dt: datetime, td: timede
             pass
             
     elif query.data == "ystdy":
-        dated.clear()
-        xx = dt.now()-td(1)
+        dateday.clear()
+        xx = datetime.now()-timedelta(1)
         x = xx.strftime("%d-%m-%Y")
         dateday.append(x)
         await query.message.edit_text(
@@ -41,16 +41,16 @@ async def cb_handler(client: Bot, query: CallbackQuery, dt: datetime, td: timede
         )
         
     elif query.data == "tdy":
-        dated.clear()
-        yy = dt.now()
+        dateday.clear()
+        yy = datetime.now()
         y = yy.strftime("%d-%m-%Y")
         dateday.append(y)
         await query.message.edit_text(
             text="Dete set to Today.."
         )
     elif query.data == "tmr":
-        dated.clear()
-        zz = dt.now()+td(1)
+        dateday.clear()
+        zz = datetime.now()+timedelta(1)
         z = zz.strftime("%d-%m-%Y")
         dateday.append(z)
         await query.message.edit_text(
