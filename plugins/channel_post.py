@@ -31,9 +31,11 @@ async def channel_post(client: Client, message: Message):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-            await asyncio.sleep(30)
+
             e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
-            await asyncio.sleep(2)
+            await asyncio.sleep(30)
+            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
+            # await asyncio.sleep(2)
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
             #chtid=int(-1001748750847) 
@@ -45,9 +47,11 @@ async def channel_post(client: Client, message: Message):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-            await asyncio.sleep(30)
+            
             e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
-            await asyncio.sleep(2)
+            await asyncio.sleep(30)
+            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
+            # await asyncio.sleep(2)
        #     bot_msg = await message.reply_text("Please Wait...!", quote = True)
             #await asyncio.sleep(1)
     else:
