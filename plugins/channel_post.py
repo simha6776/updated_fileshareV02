@@ -11,10 +11,11 @@ from helper_func import encode
 import requests
 import string
 import re
-from cbb import datee
+from cbb import cb_handler
 from pyshorteners import Shortener
 import aiohttp
 
+datee = cb_handler(client: Bot, query: CallbackQuery, datetime, dateday)
 @Bot.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
     reply_markup = InlineKeyboardMarkup(
