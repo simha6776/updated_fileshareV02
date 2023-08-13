@@ -2,14 +2,14 @@
 
 from pyrogram import __version__
 from bot import Bot
-import datetime
+from datetime import timedelta, datetime
 from config import OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 global dateday
 dateday = [1]
 @Bot.on_callback_query()
-async def cb_handler(client: Bot, query: CallbackQuery, datetime, dateday):
+async def cb_handler(client: Bot, query: CallbackQuery, datetime, datetime, dateday):
     data = query.data
    
     if data == "about":
