@@ -6,10 +6,11 @@ import datetime
 from config import OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
+dateday = [1]
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery, datetime):
     data = query.data
-    dateday = [1]
+   
     if data == "about":
         await query.message.edit_text(
             text = f"<b>○ Creator : <a href='https://t.me/link_serials'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://t.me/dj_serials_bot'>Click here</a>\n○ Channel : @link_serials\n○ Support Group : @dj_serials_bot</b>",
