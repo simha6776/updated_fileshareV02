@@ -26,19 +26,21 @@ global dateday
 dateday = datetime.now()
 @Bot.on_callback_query(filters.regex('ystdy'))
 async def ystdy(dateday):
-    await x = datetime.now()-timedelta(1)
-    await globals()['dateday'] = x
+    x = datetime.now()-timedelta(1)
+    globals()['dateday'] = x
+    await print(dateday)
     
 @Bot.on_callback_query(filters.regex('tdy'))
 async def tdy(dateday):
-    await y = datetime.now()
-    await globals()['dateday'] = y
- 
+    y = datetime.now()
+    globals()['dateday'] = y
+    await print(dateday)
+    
 @Bot.on_callback_query(filters.regex('tmr'))
 async def tmr(dateday):
-    await z = datetime.now()+timedelta(1)
-    await globals()['dateday'] = z
-    
+    z = datetime.now()+timedelta(1)
+    globals()['dateday'] = z
+    await print(dateday)
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
 async def channel_post(client: Client, message: Message):
