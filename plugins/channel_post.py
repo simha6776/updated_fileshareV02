@@ -11,7 +11,7 @@ from helper_func import encode
 import requests
 import string
 import re
-from cbb import dateday
+from plugins.cbb import dateday
 from pyshorteners import Shortener
 import aiohttp
 
