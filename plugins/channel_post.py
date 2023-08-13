@@ -23,7 +23,7 @@ async def channel_post(client: Client, message: Message):
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
             #chtid=int(-1001748750847)
-            chtid=int(ODD[filname][3])
+            # chtid=int(ODD[filname][3])
             pic=ODD[filname][0]
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
@@ -37,7 +37,7 @@ async def channel_post(client: Client, message: Message):
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
             #chtid=int(-1001748750847) 
-            chtid=int(EVEN[filname][3])
+            # chtid=int(EVEN[filname][3])
             pic=EVEN[filname][0]
             SL_URL=EVEN[filname][1]
             SL_API=EVEN[filname][2]
