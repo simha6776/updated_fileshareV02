@@ -20,43 +20,7 @@ async def channel_post(client: Client, message: Message):
     media = message.video or message.document
     filname= media.file_name.split("S0")[0]#[1][2]etc
     botfsno= hk = re.findall("S0.+E\d+", media.file_name)
-    if int(dateexc) % 2 != 0:
-        if filname in media.file_name:
-            #chtid=int(-1001748750847)
-            # chtid=int(ODD[filname][3])
-            pic=ODD[filname][0]
-            SL_URL=ODD[filname][1]
-            SL_API=ODD[filname][2]
-            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
-        			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
-        			InlineKeyboardButton("Today",callback_data = 'tdy'), 
-        			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-
-            e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
-            await asyncio.sleep(30)
-            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
-            # await asyncio.sleep(2)
-    elif int(dateexc) % 2 == 0:
-        if filname in media.file_name:
-            #chtid=int(-1001748750847) 
-            # chtid=int(EVEN[filname][3])
-            pic=EVEN[filname][0]
-            SL_URL=EVEN[filname][1]
-            SL_API=EVEN[filname][2]
-            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
-        			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
-        			InlineKeyboardButton("Today",callback_data = 'tdy'), 
-        			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-            
-            e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
-            await asyncio.sleep(30)
-            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
-            # await asyncio.sleep(2)
-       #     bot_msg = await message.reply_text("Please Wait...!", quote = True)
-            #await asyncio.sleep(1)
-    else:
-        reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
-        
+    
     try:
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
     except FloodWait as e:
@@ -69,12 +33,52 @@ async def channel_post(client: Client, message: Message):
     converted_id = post_message.id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
     base64_string = await encode(string)
+    global Tlink
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
-    
-    
+    global Slink
     Slink = await get_short(SL_URL, SL_API, Tlink)
-    await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
-    await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
+
+    if int(dateexc) % 2 != 0:
+        if filname in media.file_name:
+            #chtid=int(-1001748750847)
+            # chtid=int(ODD[filname][3])
+            global pic
+            pic=ODD[filname][0]
+            SL_URL=ODD[filname][1]
+            SL_API=ODD[filname][2]
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
+        			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
+        			InlineKeyboardButton("Today",callback_data = 'tdy'), 
+        			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
+
+            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
+            # await asyncio.sleep(30)
+            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
+            # await asyncio.sleep(2)
+    elif int(dateexc) % 2 == 0:
+        if filname in media.file_name:
+            #chtid=int(-1001748750847) 
+            # chtid=int(EVEN[filname][3])
+            globals()['pic'] = EVEN[filname][0]
+            SL_URL=EVEN[filname][1]
+            SL_API=EVEN[filname][2]
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n\n<b>⚠️Note your remaining time only 60 seconds</b>", quote=True, reply_markup=InlineKeyboardMarkup([[
+        			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
+        			InlineKeyboardButton("Today",callback_data = 'tdy'), 
+        			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
+            
+            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
+            # await asyncio.sleep(30)
+            # e_pic = await client.send_photo(chat_id = message.chat.id, photo=pic, caption=f"....")
+            # await asyncio.sleep(2)
+       #     bot_msg = await message.reply_text("Please Wait...!", quote = True)
+            #await asyncio.sleep(1)
+    else:
+        reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
+
+    
+    # await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
+    # await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     
 async def get_short(SL_URL, SL_API, Tlink):
     try:
