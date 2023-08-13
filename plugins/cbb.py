@@ -35,17 +35,17 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     elif data == "ystdy":
         DATEDAY.clear()
         ye = datetime.now(india)-timedelta(1)
-        DATEDAY.append(str(ye.strftime("%d⚡%m⚡%Y")))
+        DATEDAY.append(str(ye.strftime("%d - %m - %Y")))
         await query.message.edit_text(text = f"Date change to {DATEDAY}")
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
-        DATEDAY.append(str(tda.strftime("%d⚡%m⚡%Y")))
+        DATEDAY.append(str(tda.strftime("%d - %m - %Y")))
         await query.message.edit_text(text = f"Date change to {DATEDAY}")
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
-        DATEDAY.append(str(tm.strftime("%d⚡%m⚡%Y")))
+        DATEDAY.append(str(tm.strftime("%d - %m - %Y")))
         await query.message.edit_text(text = f"Date change to {DATEDAY}")
     else:
         pass
