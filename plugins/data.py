@@ -37,6 +37,15 @@ FOMET = """
 
 𝐡𝔬𝘸  𝗧𝐨  𝑫๏𝒘𝗻𝙻๏d - @how_view
   """
+
+BOTEFITMSG = """<b>
+Message Successfully sent ☺️
+Elements in "{}{}"
+1.Telegram Link: <a href="{}">Tlink</a>
+2.Short Link: <a href="{}">SLink</a>
+3.Date : {} 
+</b>"""
+
 ODD = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','moneycase.link','3353ec87137e166f8561b86284728bd93e1b8bdf',''],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
