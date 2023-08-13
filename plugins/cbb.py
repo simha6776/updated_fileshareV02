@@ -29,7 +29,7 @@ async def cb_handler(client: Bot, query: CallbackQuery, datetime):
         except:
             pass
             
-    if query.data == "ystdy":
+    elif query.data == "ystdy":
         dateday.clear()
         xx = datetime.now()-timedelta(1)
         x = xx.strftime("%d-%m-%Y")
