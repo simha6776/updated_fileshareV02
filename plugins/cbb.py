@@ -9,7 +9,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 
 india = pytz.timezone("Asia/Kolkata")
 global DATEDAY
-DATEDAY = []
+DATEDAY = [1]
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
