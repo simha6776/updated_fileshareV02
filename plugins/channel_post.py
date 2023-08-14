@@ -48,6 +48,8 @@ async def channel_post(client: Client, message: Message):
             # globals()['pic']=ODD[filname][0]
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
+            Slink = await get_short(SL_URL, SL_API, Tlink)
+            list.append(Slink)
             bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
@@ -65,6 +67,8 @@ async def channel_post(client: Client, message: Message):
             # globals()['pic'] = EVEN[filname][0]
             SL_URL=EVEN[filname][1]
             SL_API=EVEN[filname][2]
+            Slink = await get_short(SL_URL, SL_API, Tlink)
+            list.append(Slink)
             bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
@@ -80,8 +84,7 @@ async def channel_post(client: Client, message: Message):
     else:
         reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
 
-    Slink = await get_short(SL_URL, SL_API, Tlink)
-    list.append(Slink)
+    
     # await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
     # await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     return
