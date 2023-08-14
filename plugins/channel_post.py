@@ -34,9 +34,9 @@ async def channel_post(client: Client, message: Message):
             pic=ODD[filname][0]
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
-            bot_msg = await message.reply_text("Please Wait...!", quote = True)
+            bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
             await asyncio.sleep(2)
-            e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....")
+            e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
             await asyncio.sleep(2)
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
@@ -44,9 +44,9 @@ async def channel_post(client: Client, message: Message):
             pic=EVEN[filname][0]
             SL_URL=EVEN[filname][1]
             SL_API=EVEN[filname][2] 
-            bot_msg = await message.reply_text("Please Wait...!", quote = True)
+            bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
             await asyncio.sleep(2)
-            e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....")
+            e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
             await asyncio.sleep(2)
     else:
         reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
