@@ -8,7 +8,7 @@ from pyrogram.errors import FloodWait
 from plugins.data import FOMET, BOTEFITMSG
 from plugins.channel_post import list
 from bot import Bot
-from config import ADMINS, CHANNEL_ID, DISABLE_CHANNEL_BUTTON, OWNER_ID
+from config import ADMINS, CHANNEL_ID, DISABLE_CHANNEL_BUTTON
 from helper_func import encode
 from pyshorteners import Shortener
 import string
