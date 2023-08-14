@@ -41,8 +41,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await asyncio.sleep(600)
-        DATEDAY.clear()
+        #await asyncio.sleep(600)
+        #DATEDAY.clear()
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
@@ -51,8 +51,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await asyncio.sleep(600)
-        DATEDAY.clear()
+        #await asyncio.sleep(600)
+        #DATEDAY.clear()
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
@@ -61,8 +61,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await asyncio.sleep(600)
-        DATEDAY.clear()
+        #await asyncio.sleep(600)
+        #DATEDAY.clear()
     else:
         pass
         
