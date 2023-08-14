@@ -20,9 +20,9 @@ from datetime import timedelta, datetime
 import pytz
 
 
-pic = list[-1]
-Slink = list[-2]
-Tlink = list[-3]
+pic = str(list[-1])
+Slink = str(list[-2])
+Tlink = str(list[-3])
 india = pytz.timezone("Asia/Kolkata")
 global DATEDAY
 DATEDAY = [1]
