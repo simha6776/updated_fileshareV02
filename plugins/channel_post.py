@@ -15,7 +15,7 @@ import string
 import re
 
 
-@Client.on_message(filters.private & filters.command(["date"]))
+@Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
     dat = await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
