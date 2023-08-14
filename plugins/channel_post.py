@@ -50,7 +50,7 @@ async def channel_post(client: Client, message: Message):
             SL_API=ODD[filname][2]
             Slink = await get_short(SL_URL, SL_API, Tlink)
             list.append(Slink)
-            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>{filname}{botfsno[0]}</i></b>\n", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ],
@@ -69,7 +69,7 @@ async def channel_post(client: Client, message: Message):
             SL_API=EVEN[filname][2]
             Slink = await get_short(SL_URL, SL_API, Tlink)
             list.append(Slink)
-            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
+            bot_msg = await message.reply_text(f"⚙️choose date for <b><i>{filname}{botfsno[0]}</i></b>\n", quote=True, reply_markup=InlineKeyboardMarkup([[
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ],
