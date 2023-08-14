@@ -6,7 +6,9 @@ from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import FloodWait
 from plugins.data import FOMET, BOTEFITMSG, ODD, EVEN
-from plugins.channel_post import Tlink, Slink, pic
+from plugins.channel_post import Tlinks as Tlink 
+from plugins.channel_post import Slinks as Slink
+from plugins.channel_post import pics as pic
 from plugins.cbb import DATEDAY
 from bot import Bot
 from config import ADMINS, CHANNEL_ID, DISABLE_CHANNEL_BUTTON, OWNER_ID
