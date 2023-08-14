@@ -14,7 +14,7 @@ from pyshorteners import Shortener
 import string
 import re
 
-list = [1]
+list = [1,2,3]
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text & ~filters.command(['start','users','broadcast','batch','genlink','stats']))
 async def channel_post(client: Client, message: Message):
     dateexc = datetime.now().strftime("%d")
