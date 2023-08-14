@@ -67,9 +67,9 @@ async def channel_post(client: Client, message: Message):
     await bot_msg.edit("Editing..!")
     Slink = await get_short(SL_URL, SL_API, Tlink)
     await bot_msg.edit("Trying to send Poster.. ▣ ▢ ▢")
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
     await bot_msg.edit("Trying to send Poster.. ▣ ▣ ▢")
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
     await bot_msg.edit("Trying to send Poster.. ▣ ▣ ▣")
     await asyncio.sleep(1)
     if len(DATEDAY) != 0:
