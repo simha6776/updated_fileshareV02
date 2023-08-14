@@ -5,9 +5,8 @@ import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import FloodWait
-from plugins.data import FOMET, BOTEFITMSG, ODD, EVEN
+from plugins.data import FOMET, BOTEFITMSG
 from plugins.channel_post import list
-from plugins.cbb import DATEDAY
 from bot import Bot
 from config import ADMINS, CHANNEL_ID, DISABLE_CHANNEL_BUTTON, OWNER_ID
 from helper_func import encode
