@@ -110,3 +110,7 @@ async def new_post(client: Client, message: Message):
     except Exception as e:
         print(e)
         pass
+
+pics = pic
+Slinks = Slink
+Tlinks = Tlink
