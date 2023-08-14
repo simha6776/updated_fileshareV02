@@ -14,6 +14,7 @@ from pyshorteners import Shortener
 import string
 import re
 
+list = [1]
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text & ~filters.command(['start','users','broadcast','batch','genlink','stats']))
 async def channel_post(client: Client, message: Message):
     dateexc = datetime.now().strftime("%d")
@@ -33,12 +34,14 @@ async def channel_post(client: Client, message: Message):
     converted_id = post_message.id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
     base64_string = await encode(string)
-    global Tlink
+    
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
-    global Slink
     Slink = await get_short(SL_URL, SL_API, Tlink)
-    global pic
     pic = ODD[filname][0]
+    list.clear()
+    list.append(Tlink)
+    list.append(Slink)
+    list.append(pic)
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
             #chtid=int(-1001748750847)
@@ -110,7 +113,3 @@ async def new_post(client: Client, message: Message):
     except Exception as e:
         print(e)
         pass
-
-pics = pic
-Slinks = Slink
-Tlinks = Tlink
