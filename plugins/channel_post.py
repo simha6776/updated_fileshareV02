@@ -36,11 +36,10 @@ async def channel_post(client: Client, message: Message):
     base64_string = await encode(string)
     
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
-    Slink = await get_short(SL_URL, SL_API, Tlink)
+    
     pic = ODD[filname][0]
     list.clear()
     list.append(Tlink)
-    list.append(Slink)
     list.append(pic)
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
@@ -81,7 +80,8 @@ async def channel_post(client: Client, message: Message):
     else:
         reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
 
-    
+    Slink = await get_short(SL_URL, SL_API, Tlink)
+    list.append(Slink)
     # await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
     # await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     return
