@@ -62,14 +62,18 @@ async def channel_post(client: Client, message: Message):
     string = f"get-{converted_id}"
     base64_string = await encode(string)
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
-    await bot_msg.edit("Analysing..")
+    await bot_msg.edit("Analysing..!")
     await asyncio.sleep(1)
-    await bot_msg.edit("Editing..")
+    await bot_msg.edit("Editing..!")
     Slink = await get_short(SL_URL, SL_API, Tlink)
-    await bot_msg.edit("Sending Poster to channel..")
-    e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
-    await bot_msg.edit("Poster successfully sent to channel ♥️")
+    await bot_msg.edit("Trying to send Poster.. ▣ ▢ ▢")
+    await asyncio.sleep(2)
+    await bot_msg.edit("Trying to send Poster.. ▣ ▣ ▢")
+    await asyncio.sleep(2)
+    await bot_msg.edit("Trying to send Poster.. ▣ ▣ ▣")
     await asyncio.sleep(1)
+    await bot_msg.edit("Poster sent successfully...!")
+    e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
     await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
     
 async def get_short(SL_URL, SL_API, Tlink):
