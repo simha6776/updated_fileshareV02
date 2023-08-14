@@ -40,7 +40,6 @@ FOMET = """
 
 BOTEFITMSG = """<b>
 Message Successfully sent ☺️
-Elements in "{}{}"
 1.Telegram Link: <a href="{}">Tlink</a>
 2.Short Link: <a href="{}">SLink</a>
 3.Date : {} 
