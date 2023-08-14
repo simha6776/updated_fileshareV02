@@ -38,7 +38,7 @@ async def channel_post(client: Client, message: Message):
     global Slink
     Slink = await get_short(SL_URL, SL_API, Tlink)
     global pic
-    pic = ODD[filname][-1]
+    pic = ODD[filname][0]
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
             #chtid=int(-1001748750847)
