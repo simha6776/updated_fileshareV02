@@ -35,9 +35,8 @@ async def channel_post(client: Client, message: Message):
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
             bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
-            await asyncio.sleep(2)
-            e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
-            await asyncio.sleep(2)
+            await asyncio.sleep(1)
+            #e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
             # chtid=int(EVEN[filname][3])
@@ -45,9 +44,8 @@ async def channel_post(client: Client, message: Message):
             SL_URL=EVEN[filname][1]
             SL_API=EVEN[filname][2] 
             bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
-            await asyncio.sleep(2)
-            e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
-            await asyncio.sleep(2)
+            await asyncio.sleep(1)
+            #e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
     else:
         reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
         
@@ -64,11 +62,16 @@ async def channel_post(client: Client, message: Message):
     string = f"get-{converted_id}"
     base64_string = await encode(string)
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
-    
+    await bot_msg.edit("Analysing..")
+    await asyncio.sleep(1)
+    await bot_msg.edit("Editing..")
     Slink = await get_short(SL_URL, SL_API, Tlink)
+    await bot_msg.edit("Sending Poster to channel..")
+    e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
+    await bot_msg.edit("Poster successfully sent to channel ♥️")
+    await asyncio.sleep(1)
     await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
-    await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
-
+    
 async def get_short(SL_URL, SL_API, Tlink):
     # FireLinks shorten
     try:
