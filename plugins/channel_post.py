@@ -77,7 +77,7 @@ async def channel_post(client: Client, message: Message):
         e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
         await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
     else:
-        await bot_msg.edit("<b>Invalid DATE,\n\n Please set DATE again </b> /date ")
+        await bot_msg.edit("Invalid DATE, Please set DATE again /date...?")
     
 async def get_short(SL_URL, SL_API, Tlink):
     # FireLinks shorten
