@@ -38,12 +38,12 @@ async def channel_post(client: Client, message: Message):
     global Slink
     Slink = await get_short(SL_URL, SL_API, Tlink)
     global pic
-    pic = None
+    pic = ODD[filname][-1]
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
             #chtid=int(-1001748750847)
             # chtid=int(ODD[filname][3])
-            globals()['pic']=ODD[filname][0]
+            # globals()['pic']=ODD[filname][0]
             SL_URL=ODD[filname][1]
             SL_API=ODD[filname][2]
             bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
@@ -60,7 +60,7 @@ async def channel_post(client: Client, message: Message):
         if filname in media.file_name:
             #chtid=int(-1001748750847) 
             # chtid=int(EVEN[filname][3])
-            globals()['pic'] = EVEN[filname][0]
+            # globals()['pic'] = EVEN[filname][0]
             SL_URL=EVEN[filname][1]
             SL_API=EVEN[filname][2]
             bot_msg = await message.reply_text(f"⚙️choose date for <b><i>>{filname}{botfsno[0]}</i></b\n", quote=True, reply_markup=InlineKeyboardMarkup([[
