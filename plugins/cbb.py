@@ -4,6 +4,7 @@ from pyrogram import __version__
 from bot import Bot
 import pytz
 import time
+import asyncio
 from config import OWNER_ID
 from datetime import datetime, timedelta
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
@@ -40,7 +41,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await time.sleep(300)
+        await asyncio.sleep(300)
         await DATEDAY.clear()
     elif data == "tdy":
         DATEDAY.clear()
@@ -50,7 +51,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await time.sleep(300)
+        await asyncio.sleep(300)
         await DATEDAY.clear()
     elif data == "tmr":
         DATEDAY.clear()
@@ -60,7 +61,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await time.sleep(300)
+        await asyncio.sleep(300)
         await DATEDAY.clear()
     else:
         pass
