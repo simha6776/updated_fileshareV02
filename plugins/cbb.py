@@ -54,7 +54,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         # await query.message.edit_text(text = f"Date change to {DATEDAY}")
         
         e_pic = await client.send_photo(chat_id = query.from_user.id, photo=str(list[-2]), caption=f"....")
-        await time.sleep(3)
+        time.sleep(3)
         await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], str(list[-3]), str(list[-1]), DATEDAY[-1]))
         await e_pic.edit(FOMET.format(DATEDAY[-1], str(list[-1]), str(list[-1])))
     elif data == "tdy":
@@ -64,7 +64,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         # await query.message.edit_text(text = f"Date change to {DATEDAY}")
 
         e_pic = await client.send_photo(chat_id = query.from_user.id, photo=str(list[-2]), caption=f"....")
-        await time.sleep(3)
+        time.sleep(3)
         await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], str(list[-3]), str(list[-1]), DATEDAY[-1]))
         await e_pic.edit(FOMET.format(DATEDAY[-1], str(list[-1]), str(list[-1])))
     elif data == "tmr":
@@ -74,7 +74,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         # await query.message.edit_text(text = f"Date change to {DATEDAY}")
 
         e_pic = await client.send_photo(chat_id = query.from_user.id, photo=str(list[-2]), caption=f"....")
-        await time.sleep(3)
+        time.sleep(3)
         await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], str(list[-3]), str(list[-1]), DATEDAY[-1]))
         await e_pic.edit(FOMET.format(DATEDAY[-1], str(list[-1]), str(list[-1])))
     else:
