@@ -55,7 +55,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         
         e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
         await time.sleep(3)
-        await query.message.edit_text(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
+        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
         await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     elif data == "tdy":
         DATEDAY.clear()
@@ -65,7 +65,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
         e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
         await time.sleep(3)
-        await query.message.edit_text(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
+        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
         await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     elif data == "tmr":
         DATEDAY.clear()
@@ -75,7 +75,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
         e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
         await time.sleep(3)
-        await query.message.edit_text(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
+        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
         await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
     else:
         pass
