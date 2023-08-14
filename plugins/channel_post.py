@@ -30,20 +30,20 @@ async def channel_post(client: Client, message: Message):
     botfsno= hk = re.findall("S0.+E\d+", media.file_name)
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
-            # chtid=int(DATAODD[filname][3])
-            pic=DATAODD[filname][0]
-            SL_URL=DATAODD[filname][1]
-            SL_API=DATAODD[filname][2]
+            # chtid=int(ODD[filname][3])
+            pic=ODD[filname][0]
+            SL_URL=ODD[filname][1]
+            SL_API=ODD[filname][2]
             bot_msg = await message.reply_text("Please Wait...!", quote = True)
             await asyncio.sleep(2)
             e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....")
             await asyncio.sleep(2)
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
-            # chtid=int(DATAEVEN[filname][3])
-            pic=DATAEVEN[filname][0]
-            SL_URL=DATAEVEN[filname][1]
-            SL_API=DATAEVEN[filname][2] 
+            # chtid=int(EVEN[filname][3])
+            pic=EVEN[filname][0]
+            SL_URL=EVEN[filname][1]
+            SL_API=EVEN[filname][2] 
             bot_msg = await message.reply_text("Please Wait...!", quote = True)
             await asyncio.sleep(2)
             e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....")
