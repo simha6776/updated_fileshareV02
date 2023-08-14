@@ -19,9 +19,9 @@ from datetime import timedelta, datetime
 import pytz
 
 
-pic = str(list[-2])
-Slink = str(list[-1])
-Tlink = str(list[-3])
+# pic = str(list[-2])
+# Slink = str(list[-1])
+# Tlink = str(list[-3])
 india = pytz.timezone("Asia/Kolkata")
 global DATEDAY
 DATEDAY = [1]
@@ -53,29 +53,29 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         DATEDAY.append(str(ye.strftime("%d - %m - %Y")))
         # await query.message.edit_text(text = f"Date change to {DATEDAY}")
         
-        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
+        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=str(list[-2]), caption=f"....")
         await time.sleep(3)
-        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
-        await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
+        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], str(list[-3]), str(list[-1]), DATEDAY[-1]))
+        await e_pic.edit(FOMET.format(DATEDAY[-1], str(list[-1]), str(list[-1])))
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
         DATEDAY.append(str(tda.strftime("%d - %m - %Y")))
         # await query.message.edit_text(text = f"Date change to {DATEDAY}")
 
-        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
+        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=str(list[-2]), caption=f"....")
         await time.sleep(3)
-        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
-        await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
+        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], str(list[-3]), str(list[-1]), DATEDAY[-1]))
+        await e_pic.edit(FOMET.format(DATEDAY[-1], str(list[-1]), str(list[-1])))
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
         DATEDAY.append(str(tm.strftime("%d - %m - %Y")))
         # await query.message.edit_text(text = f"Date change to {DATEDAY}")
 
-        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=pic, caption=f"....")
+        e_pic = await client.send_photo(chat_id = query.from_user.id, photo=str(list[-2]), caption=f"....")
         await time.sleep(3)
-        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
-        await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
+        await query.message.edit_text(text = BOTEFITMSG.format(filname, botfsno[0], str(list[-3]), str(list[-1]), DATEDAY[-1]))
+        await e_pic.edit(FOMET.format(DATEDAY[-1], str(list[-1]), str(list[-1])))
     else:
         pass
