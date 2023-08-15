@@ -25,7 +25,6 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483"))
 
 # #shortenr
 # API = environ.get('API','eedc409c6457b8c783019e990dde8fd531b58eca')
-WORKER = 20
 #Port
 PORT = os.environ.get("PORT", "8080")
 
@@ -36,7 +35,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "New_Divya_Spandana")
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "20"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
