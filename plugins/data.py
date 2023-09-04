@@ -103,7 +103,7 @@ ODD = {
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','omegalinks.in','15d91bfa7a9e55f361e3c929d2286dd944ed8b93',''],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','omegalinks.in','77e02a4b4c630263e38228964043aed8d222d1e7',''],
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','omegalinks.in','b0856b4d49bb7288d64e25ab83e5efc004b4b340',''],
-        'Kaveri_Kannada_Medium_':['https://graph.org/file/09f90f559d100a415f393.jpg','omegalinks.in','b0856b4d49bb7288d64e25ab83e5efc004b4b340','']
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','omegalinks.in','b0856b4d49bb7288d64e25ab83e5efc004b4b340','']
 }
 
 EVEN = {
@@ -164,5 +164,5 @@ EVEN = {
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','moneycase.link','3353ec87137e166f8561b86284728bd93e1b8bdf',''],
-        'Kaveri_Kannada_Medium_':['https://graph.org/file/09f90f559d100a415f393.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
 }
