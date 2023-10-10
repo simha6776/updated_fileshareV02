@@ -68,7 +68,7 @@ ODD = {
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','omegalinks.in','15d91bfa7a9e55f361e3c929d2286dd944ed8b93',''],
         'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
-        'Jodi_No_1_Season_2_' :[::]
+        'Jodi_No_1_Season_2_' :['','','']
   
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','omegalinks.in','77e02a4b4c630263e38228964043aed8d222d1e7',''],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
