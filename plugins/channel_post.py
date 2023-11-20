@@ -78,10 +78,10 @@ async def channel_post(client: Client, message: Message):
     string = f"get-{converted_id}"
     base64_string = await encode(string)
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
+    Slink = await get_short(SL_URL, SL_API, Tlink)
     await bot_msg.edit("Analysing..!")
     await asyncio.sleep(1)
     await bot_msg.edit("Editing..!")
-    Slink = await get_short(SL_URL, SL_API, Tlink)
     await bot_msg.edit("Trying to send Poster.. ▣ ▢ ▢")
     await asyncio.sleep(1)
     await bot_msg.edit("Trying to send Poster.. ▣ ▣ ▢")
