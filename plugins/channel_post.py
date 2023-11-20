@@ -28,10 +28,10 @@ async def date(bot, message):
 async def channel_post(client: Client, message: Message):
     dateexc = datetime.now().strftime("%d")
     media = message.video or message.document
-    filname= media.file_name.split("S0")[0]#[1][2]etc
+    filname= re.split("S\d", media.file_name)[0] #[1][2]etc
     botfsno= re.findall("S0.+E\d+\d", media.file_name)
     if int(dateexc) % 2 != 0:
-        if filname in media.file_name:
+        if filname in ODD.keys():
             # chtid=int(ODD[filname][3])
             pic=ODD[filname][0]
             SL_URL=ODD[filname][1]
@@ -42,12 +42,12 @@ async def channel_post(client: Client, message: Message):
             bot_msg = await message.reply_text("Please Wait...!", quote = True)
             link = await conv_link(client , message)
             sslink= await get_short(SSLINK, SAPI, link)
-            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort\n<code>{sslink}</code>")
+            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort Link\n<code>{sslink}</code>")
         else:
             reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
             
     elif int(dateexc) % 2 == 0:
-        if filname in media.file_name:
+        if filname in EVEN.keys():
             # chtid=int(EVEN[filname][3])
             pic=EVEN[filname][0]
             SL_URL=EVEN[filname][1]
