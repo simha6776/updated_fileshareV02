@@ -15,6 +15,8 @@ import string
 import re
 
 
+SAPI = "c5dbea7703b576144630660355aaa3dbd3a59cc5"
+SSLINK = "upshrink.com"
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
     dat = await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
@@ -36,7 +38,14 @@ async def channel_post(client: Client, message: Message):
             SL_API=ODD[filname][2]
             bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
             await asyncio.sleep(1)
-            #e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
+        elif media.file_name in media.file_name:
+            bot_msg = await message.reply_text("Please Wait...!", quote = True)
+            link = await conv_link(client , message)
+            sslink= await get_short(SSLINK, SAPI, link)
+            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort\n<code>{sslink}</code>")
+        else:
+            reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
+            
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
             # chtid=int(EVEN[filname][3])
@@ -45,7 +54,14 @@ async def channel_post(client: Client, message: Message):
             SL_API=EVEN[filname][2] 
             bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
             await asyncio.sleep(1)
-            #e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption=f"....")
+        elif media.file_name in media.file_name:
+            bot_msg = await message.reply_text("Please Wait...!", quote = True)
+            link = await conv_link(client , message)
+            sslink= await get_short(SSLINK, SAPI, link)
+            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort\n<code>{sslink}</code>")
+        else:
+            reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
+            
     else:
         reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
         
@@ -91,6 +107,22 @@ async def get_short(SL_URL, SL_API, Tlink):
         return url
     except Exception as error:
         return error
+
+async def conv_link(client , message):
+    try:
+       post_message = await message.copy(chat_id = CHANNEL_ID, disable_notification=True)
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
+        post_message = await message.copy(chat_id = CHANNEL_ID, disable_notification=True)
+    except Exception as e:
+        print(e) 
+        await client.send_message(message.chat.id, "Somthing is Wrong")
+    converted_id = post_message.id * abs(CHANNEL_ID)
+    string = f"get-{converted_id}"
+    base64_string = await encode(string)
+    link = f"https://telegram.me/{client.username}?start={base64_string}"
+    # await client.send_massage(message.chat.id , f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>", disable_web_page_preview = True)
+    return link
     
 @Bot.on_message(filters.channel & filters.incoming & filters.chat(CHANNEL_ID))
 async def new_post(client: Client, message: Message):
