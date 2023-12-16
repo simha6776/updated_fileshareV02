@@ -73,7 +73,8 @@ ODD = {
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
-        'Jodi_No_1_Season_2_' :['','',''],
+        'Jodi_No_1_Season_2_':['https://graph.org/file/034b0251e3e3cbc172ddf.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Sa_Re_Ga_Ma_Pa_Season_20_':['https://graph.org/file/7ef74d66ba659081feab3.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
   
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
@@ -93,6 +94,9 @@ ODD = {
         'Gunasundari_':['https://graph.org/file/8d4b6b2e9703a7d97b546.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Anu_':['https://graph.org/file/7a8f5ce25159932859193.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Family_Gangstars_':['https://graph.org/file/d08c55a1b259a3b5c95b7.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Brundavana_':['https://graph.org/file/c900f93523b7a0656d6b2.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Shiva_Shakthi_':['https://v3img.voot.com/v3Storage/assets/16x9-1695984892621.jpg?imformat=chrome','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
 
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Namma_Lachi_':['https://graph.org/file/b315e59c10e04d1b2e595.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
@@ -109,7 +113,10 @@ ODD = {
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
-        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5','']
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Gowri_Shankara_':['https://graph.org/file/074cc5c27be51345717eb.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Aase_':['https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4409/1634409-h-56bd781e62da','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Gowri_Shankara_':['https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4799/1624799-h-61953b079ad4','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5','']
 }
 
 EVEN = {
@@ -135,6 +142,8 @@ EVEN = {
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
         'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Jodi_No_1_Season_2_':['https://graph.org/file/034b0251e3e3cbc172ddf.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Sa_Re_Ga_Ma_Pa_Season_20_':['https://graph.org/file/7ef74d66ba659081feab3.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
           
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
@@ -154,6 +163,9 @@ EVEN = {
         'Gunasundari_':['https://graph.org/file/8d4b6b2e9703a7d97b546.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
         'Anu_':['https://graph.org/file/7a8f5ce25159932859193.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
         'Family_Gangstars_':['https://graph.org/file/d08c55a1b259a3b5c95b7.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Brundavana_':['https://graph.org/file/c900f93523b7a0656d6b2.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Shiva_Shakthi_':['https://v3img.voot.com/v3Storage/assets/16x9-1695984892621.jpg?imformat=chrome','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
 
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Namma_Lachi_':['https://graph.org/file/b315e59c10e04d1b2e595.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
@@ -170,5 +182,9 @@ EVEN = {
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','moneycase.link','3353ec87137e166f8561b86284728bd93e1b8bdf',''],
-        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Gowri_Shankara_':['https://graph.org/file/074cc5c27be51345717eb.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Aase_':['https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4409/1634409-h-56bd781e62da','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Gowri_Shankara_':['https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4799/1624799-h-61953b079ad4','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5','']
+
 }
