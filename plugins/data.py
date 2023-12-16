@@ -95,7 +95,7 @@ ODD = {
         'Anu_':['https://graph.org/file/7a8f5ce25159932859193.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Family_Gangstars_':['https://graph.org/file/d08c55a1b259a3b5c95b7.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Brundavana_':['https://graph.org/file/c900f93523b7a0656d6b2.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
-        'Shiva_Shakthi_':['https://v3img.voot.com/v3Storage/assets/16x9-1695984892621.jpg?imformat=chrome','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Shiva_Shakthi_':['https://v3img.voot.com/v3Storage/assets/16x9-1695984892621.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
 
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
