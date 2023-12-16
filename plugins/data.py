@@ -186,5 +186,4 @@ EVEN = {
         'Gowri_Shankara_':['https://graph.org/file/074cc5c27be51345717eb.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Aase_':['https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4409/1634409-h-56bd781e62da','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Gowri_Shankara_':['https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4799/1624799-h-61953b079ad4','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5','']
-
 }
