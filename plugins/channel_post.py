@@ -34,41 +34,47 @@ async def channel_post(client: Client, message: Message):
     ############# FOR DS BOT ##################
     filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
     #botfsno= re.findall("S0.+E\d+\d", media.file_name)
-    if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
-        if filname in ODD.keys():
-            # chtid=int(ODD[filname][3])
-            pic=ODD[filname][0]
-            SL_URL=ODD[filname][1]
-            SL_API=ODD[filname][2]
-            bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
-            await asyncio.sleep(1)
-        elif media.file_name in media.file_name:
-            bot_msg = await message.reply_text("Please Wait...!", quote = True)
-            link = await conv_link(client , message)
-            sslink= await get_short(SSLINK, SAPI, link)
-            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort Link\n<code>{sslink}</code>")
+
+    #here we check the date is set or not
+    try:   
+        if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
+            if filname in ODD.keys():
+                # chtid=int(ODD[filname][3])
+                pic=ODD[filname][0]
+                SL_URL=ODD[filname][1]
+                SL_API=ODD[filname][2]
+                bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
+                await asyncio.sleep(1)
+            elif media.file_name in media.file_name:
+                bot_msg = await message.reply_text("Please Wait...!", quote = True)
+                link = await conv_link(client , message)
+                sslink= await get_short(SSLINK, SAPI, link)
+                await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort Link\n<code>{sslink}</code>")
+            else:
+                reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
+            
+        elif int(DATEDAY[-1][0:2]) % 2 == 0:#chaeking for EVEN by given date
+            if filname in EVEN.keys():
+                # chtid=int(EVEN[filname][3])
+                pic=EVEN[filname][0]
+                SL_URL=EVEN[filname][1]
+                SL_API=EVEN[filname][2] 
+                bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
+                await asyncio.sleep(1)
+            elif media.file_name in media.file_name:
+                bot_msg = await message.reply_text("Please Wait...!", quote = True)
+                link = await conv_link(client , message)
+                sslink= await get_short(SSLINK, SAPI, link)
+                await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort\n<code>{sslink}</code>")
+            else:
+                reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
+            
         else:
             reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
-            
-    elif int(DATEDAY[-1][0:2]) % 2 == 0:#chaeking for EVEN by given date
-        if filname in EVEN.keys():
-            # chtid=int(EVEN[filname][3])
-            pic=EVEN[filname][0]
-            SL_URL=EVEN[filname][1]
-            SL_API=EVEN[filname][2] 
-            bot_msg = await message.reply_text("Please Wait...!", quote = True, disable_web_page_preview = True)
-            await asyncio.sleep(1)
-        elif media.file_name in media.file_name:
-            bot_msg = await message.reply_text("Please Wait...!", quote = True)
-            link = await conv_link(client , message)
-            sslink= await get_short(SSLINK, SAPI, link)
-            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort\n<code>{sslink}</code>")
-        else:
-            reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
-            
-    else:
-        reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
-        
+
+    except:
+        await bot_msg.edit("Invalid DATE, Please set DATE again /date...?")
+    
     try:
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
     except FloodWait as e:
@@ -92,13 +98,11 @@ async def channel_post(client: Client, message: Message):
     await asyncio.sleep(1)
     await bot_msg.edit("Trying to send Poster.. ▣ ▣ ▣")
     await asyncio.sleep(1)
-    if len(DATEDAY) != 0:
-        await bot_msg.edit("Poster sent successfully...!")
-        e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
-        #await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
-        await bot_msg.edit(BOTEFITMSG.format(filname, Tlink, Slink, DATEDAY[0]))
-    else:
-        await bot_msg.edit("Invalid DATE, Please set DATE again /date...?")
+
+    await bot_msg.edit("Poster sent successfully...!")
+    e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
+    #await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
+    await bot_msg.edit(BOTEFITMSG.format(filname, Tlink, Slink, DATEDAY[0]))
     
 async def get_short(SL_URL, SL_API, Tlink):
     # FireLinks shorten
