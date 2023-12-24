@@ -34,7 +34,7 @@ async def channel_post(client: Client, message: Message):
     ############# FOR DS BOT ##################
     filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
     #botfsno= re.findall("S0.+E\d+\d", media.file_name)
-    if int(dateexc) % 2 != 0:
+    if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
         if filname in ODD.keys():
             # chtid=int(ODD[filname][3])
             pic=ODD[filname][0]
@@ -50,7 +50,7 @@ async def channel_post(client: Client, message: Message):
         else:
             reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
             
-    elif int(dateexc) % 2 == 0:
+    elif int(DATEDAY[-1][0:2]) % 2 == 0:#chaeking for EVEN by given date
         if filname in EVEN.keys():
             # chtid=int(EVEN[filname][3])
             pic=EVEN[filname][0]
