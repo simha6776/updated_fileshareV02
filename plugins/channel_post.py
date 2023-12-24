@@ -73,7 +73,7 @@ async def channel_post(client: Client, message: Message):
             reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
 
     except:
-        await bot_msg.edit("Invalid DATE, Please set DATE again /date...?")
+        await message.reply_text("Invalid DATE, Please set DATE again /date...?")
     
     try:
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
