@@ -33,10 +33,7 @@ async def channel_post(client: Client, message: Message):
     #filname = re.split("S\d", media.file_name)[0]#[1][2]etc
     ############# FOR DS BOT ##################
     filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
-    
-    #Eno= re.findall("S\d+E\d+\d", media.file_name)                   
-    
-    botfsno= re.findall("S0.+E\d+\d", media.file_name)
+    #botfsno= re.findall("S0.+E\d+\d", media.file_name)
     if int(dateexc) % 2 != 0:
         if filname in ODD.keys():
             # chtid=int(ODD[filname][3])
@@ -98,7 +95,8 @@ async def channel_post(client: Client, message: Message):
     if len(DATEDAY) != 0:
         await bot_msg.edit("Poster sent successfully...!")
         e_pic = await client.send_photo(chat_id=int(-1001956515516), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
-        await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
+        #await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
+        await bot_msg.edit(BOTEFITMSG.format(filname, Tlink, Slink, DATEDAY[0]))
     else:
         await bot_msg.edit("Invalid DATE, Please set DATE again /date...?")
     
