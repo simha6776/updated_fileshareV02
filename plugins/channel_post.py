@@ -40,8 +40,8 @@ async def channel_post(client: Client, message: Message):
     #print(prefile)
     Eno = re.split("\s-\s",prefile)
     #print(Eno[0])
-    filname = f'{Eno[1].replace(" ", "_")+"_"}_'
-    
+    filname = f'{Eno[1].replace(" ", "_")}_'
+   
     #here we check the date is set or not
     try:   
         if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
