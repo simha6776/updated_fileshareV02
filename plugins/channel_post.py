@@ -35,15 +35,17 @@ async def channel_post(client: Client, message: Message):
     #filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
     #botfsno= re.findall("S0.+E\d+\d", media.file_name)
 
-    prefile = re.split("Episode_", media.file_name)[1]
-    Eno = re.split("_",prefile)[0]
-    En = re.split(f"{Eno}_",prefile)[1]
-    filname = re.split(f"{current_time.strftime("%B")}|.mp4",En)[0]
+    f = message.caption
+    prefile = re.split("Episode\s", f)[1]
+    #print(prefile)
+    Eno = re.split("\s-\s",prefile)
+    #print(Eno[0])
+    filname = f'{Eno[1].replace(" ", "_")+"_"}_'
     
     #here we check the date is set or not
     try:   
         if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
-            if f"{filname}_" in ODD.keys():
+            if filname in ODD.keys():
                 # chtid=int(ODD[filname][3])
                 pic=ODD[filname][0]
                 SL_URL=ODD[filname][1]
@@ -59,7 +61,7 @@ async def channel_post(client: Client, message: Message):
                 reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
             
         elif int(DATEDAY[-1][0:2]) % 2 == 0:#chaeking for EVEN by given date
-            if f"{filname}_"  in EVEN.keys():
+            if filname in EVEN.keys():
                 # chtid=int(EVEN[filname][3])
                 pic=EVEN[filname][0]
                 SL_URL=EVEN[filname][1]
