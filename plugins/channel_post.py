@@ -36,7 +36,6 @@ async def channel_post(client: Client, message: Message):
     #botfsno= re.findall("S0.+E\d+\d", media.file_name)
 
     #here we check the date is set or not
-    bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
     try:
         if "ZEE5.WEB-DL" in message.caption:
             prefile = re.split("Episode\s", message.caption)[1]
