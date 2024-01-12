@@ -45,9 +45,9 @@ async def channel_post(client: Client, message: Message):
         elif "JIOCINEMA.WEB-DL" in message.caption:
             filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
         else:
-            await bot_msg.edit("FILENAME NOT MATCHED")
+            bot_msg = await client.send_message(chat_id=message.chat.id, text="FILENAME NOT MATCHED")
         if len(DATEDAY)==0:
-            await client.send_message(chat_id=message.chat.id, text="Error: invalid date please set /date")
+            return await client.send_message(chat_id=message.chat.id, text="Error: invalid date please set /date")
         else:   
             if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
                 if filname in ODD.keys():
