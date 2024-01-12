@@ -85,8 +85,10 @@ async def channel_post(client: Client, message: Message):
                 reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
 
     except:
-        await message.reply_text("Invalid DATE, Please set DATE again /date...?")
-    
+        await bot_msg.edit("Please Wait...!")
+        link = await conv_link(client , message)
+        sslink= await get_short(SSLINK, SAPI, link)
+        await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>\n\nShort\n<code>{sslink}</code>") 
     try:
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
     except FloodWait as e:
