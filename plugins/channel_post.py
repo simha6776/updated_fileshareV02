@@ -34,18 +34,9 @@ async def channel_post(client: Client, message: Message):
     ############# FOR DS BOT ##################
     #filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
     #botfsno= re.findall("S0.+E\d+\d", media.file_name)
-
+    filname= media.file_name.split("Season")[0]#[1][2]etc
     #here we check the date is set or not
     try:
-        if "ZEE5.WEB-DL" in message.caption:
-            prefile = re.split("Episode\s", message.caption)[1]
-            subfile = re.split("\s-\s",prefile)
-            Eno = subfile[0]
-            filname = f'{subfile[1].replace(" ", "_")}_'
-        elif "JIOCINEMA.WEB-DL" in message.caption:
-            filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
-        else:
-            bot_msg = await client.send_message(chat_id=message.chat.id, text="FILENAME NOT MATCHED")
         if len(DATEDAY)==0:
             return await client.send_message(chat_id=message.chat.id, text="Error: invalid date please set /date")
         else:   
