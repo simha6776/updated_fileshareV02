@@ -117,8 +117,8 @@ ODD = {
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Gowri_Shankara_':['https://graph.org/file/074cc5c27be51345717eb.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
-        'Aase_':['https://te.legra.ph/file/2e41e0ab4cf35e473de3c.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5','']
-        'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Aase_':['https://te.legra.ph/file/2e41e0ab4cf35e473de3c.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
         
 }
 
@@ -189,7 +189,7 @@ EVEN = {
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','moneycase.link','3353ec87137e166f8561b86284728bd93e1b8bdf',''],
         'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Gowri_Shankara_':['https://graph.org/file/074cc5c27be51345717eb.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
-        'Aase_':['https://te.legra.ph/file/2e41e0ab4cf35e473de3c.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5','']
-        'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Aase_':['https://te.legra.ph/file/2e41e0ab4cf35e473de3c.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
         
 }
