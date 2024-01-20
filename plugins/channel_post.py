@@ -32,9 +32,10 @@ async def channel_post(client: Client, message: Message):
     ############# FOR UTSAV BOT ##################
     #filname = re.split("S\d", media.file_name)[0]#[1][2]etc
     ############# FOR DS BOT ##################
-    #filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
+    filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
     #botfsno= re.findall("S0.+E\d+\d", media.file_name)
-    filname= media.file_name.split("Season")[0]#[1][2]etc
+    #filname= media.file_name.split("Season")[0]#[1][2]etc
+    
     #here we check the date is set or not
     try:
         if len(DATEDAY)==0:
