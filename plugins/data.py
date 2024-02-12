@@ -99,7 +99,10 @@ ODD = {
         'Brundavana_':['https://te.legra.ph/file/400cc7b9a9dcc1c1d230e.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Shiva_Shakthi_':['https://te.legra.ph/file/cd50cd7409c99d938aace.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
-
+        'Gicchi_GiliGili_':['https://graph.org/file/05f05342a119b6bb761b6.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Nannamma_Super_Star_':['https://graph.org/file/5bac5c91fea236c033c51.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Shreegowri_':['https://graph.org/file/3cf54af8dcac7caf06c5e.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+  
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Namma_Lachi_':['https://graph.org/file/b315e59c10e04d1b2e595.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
         'Nagapanchami_':['https://graph.org/file/dd2a58d339ca517010edc.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
@@ -119,7 +122,7 @@ ODD = {
         'Gowri_Shankara_':['https://graph.org/file/074cc5c27be51345717eb.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Aase_':['https://te.legra.ph/file/2e41e0ab4cf35e473de3c.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
-        
+        'Kasthuri_':['https://graph.org/file/8df5dc99f7e345d5097dd.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
 }
 
 EVEN = {
@@ -171,7 +174,10 @@ EVEN = {
         'Brundavana_':['https://te.legra.ph/file/400cc7b9a9dcc1c1d230e.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Shiva_Shakthi_':['https://te.legra.ph/file/cd50cd7409c99d938aace.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
-
+        'Gicchi_GiliGili_':['https://graph.org/file/05f05342a119b6bb761b6.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Nannamma_Super_Star_':['https://graph.org/file/5bac5c91fea236c033c51.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Shreegowri_':['https://graph.org/file/3cf54af8dcac7caf06c5e.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+  
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Namma_Lachi_':['https://graph.org/file/b315e59c10e04d1b2e595.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Nagapanchami_':['https://graph.org/file/dd2a58d339ca517010edc.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
@@ -191,5 +197,5 @@ EVEN = {
         'Gowri_Shankara_':['https://graph.org/file/074cc5c27be51345717eb.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Aase_':['https://te.legra.ph/file/2e41e0ab4cf35e473de3c.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
-        
+        'Kasthuri_':['https://graph.org/file/8df5dc99f7e345d5097dd.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d','']
 }
