@@ -76,7 +76,7 @@ ODD = {
         'Jodi_No_1_Season_2_':['https://graph.org/file/034b0251e3e3cbc172ddf.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Sa_Re_Ga_Ma_Pa_Season_20_':['https://graph.org/file/7ef74d66ba659081feab3.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Drama_Juniors_Season_5_':['https://graph.org/file/d8b1e16b46a0c6a4850fe.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
-        'Lakshmi_Nivasa_':['https://graph.org/file/6306489e3155e6780acc8.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Lakshmi_Nivasa_':['https://graph.org/file/6306489e3155e6780acc8.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
   
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
@@ -101,7 +101,7 @@ ODD = {
         'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Gicchi_GiliGili_':['https://graph.org/file/05f05342a119b6bb761b6.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Nannamma_Super_Star_':['https://graph.org/file/5bac5c91fea236c033c51.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
-        'Shreegowri_':['https://graph.org/file/3cf54af8dcac7caf06c5e.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
+        'Shreegowri_':['https://graph.org/file/3cf54af8dcac7caf06c5e.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
   
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Namma_Lachi_':['https://graph.org/file/b315e59c10e04d1b2e595.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
@@ -137,7 +137,7 @@ EVEN = {
         'Gattimela_':['https://graph.org/file/d3eda0e1961ee06e5cba7.jpg','moneycase.link','19493fe3f9dea264d98650a31cb63683043e7fb4',''],
         'Manemagalu_':['https://graph.org/file/979b1125f1b333d1b8b07.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Sandhyaraaga_':['https://graph.org/file/98ef89a04dd66bef924ea.jpg','moneycase.link','3353ec87137e166f8561b86284728bd93e1b8bdf',''],
-        'SeethaRaama_':['https://graph.org/file/d7b3c98a89d0d061f064f.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'SeethaRaama_':['https://graph.org/file/d7b3c98a89d0d061f064f.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
         'Amruthadhaare_':['https://graph.org/file/2ebe4f1d999849a1ca574.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Mahanayaka_Dr_B_R_Ambedkar_':['https://graph.org/file/6faf520d534a49f6742bb.jpg','moneycase.link','1ce2b97c939498eecfa3002624a54f100eab8cbe',''],
         'Shrirasthu_Shubhamasthu_':['https://graph.org/file/b6d93c7cc15166fbf7e35.jpg','moneycase.link','3353ec87137e166f8561b86284728bd93e1b8bdf',''],
@@ -178,7 +178,7 @@ EVEN = {
         'Nannamma_Super_Star_':['https://graph.org/file/5bac5c91fea236c033c51.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
         'Shreegowri_':['https://graph.org/file/3cf54af8dcac7caf06c5e.jpg','moneycase.link','e9872aa279e0a57e59cf4ef3d20bea8c3be0571d',''],
   
-        'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
+        'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
         'Namma_Lachi_':['https://graph.org/file/b315e59c10e04d1b2e595.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Nagapanchami_':['https://graph.org/file/dd2a58d339ca517010edc.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
         'Raani_':['https://graph.org/file/5a8aed0bcd6e14604b5d8.jpg','upshrink.com','c5dbea7703b576144630660355aaa3dbd3a59cc5',''],
