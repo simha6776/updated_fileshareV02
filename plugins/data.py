@@ -125,7 +125,7 @@ EVEN = {
         'Gattimela_':['https://graph.org/file/d3eda0e1961ee06e5cba7.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
         'Manemagalu_':['https://graph.org/file/979b1125f1b333d1b8b07.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
         'Sandhyaraaga_':['https://graph.org/file/98ef89a04dd66bef924ea.jpg','linkshortify.com','ebfeddd3762d5932f82db2f83c1ec2633963bf80',''],
-        'SeethaRaama_':['https://graph.org/file/d7b3c98a89d0d061f064f.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
+        'SeethaRaama_':['https://graph.org/file/d7b3c98a89d0d061f064f.jpg','linkshortify.com','ebfeddd3762d5932f82db2f83c1ec2633963bf80',''],
         'Amruthadhaare_':['https://graph.org/file/2ebe4f1d999849a1ca574.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
         'Mahanayaka_Dr_B_R_Ambedkar_':['https://graph.org/file/6faf520d534a49f6742bb.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
         'Shrirasthu_Shubhamasthu_':['https://graph.org/file/b6d93c7cc15166fbf7e35.jpg','linkshortify.com','ebfeddd3762d5932f82db2f83c1ec2633963bf80',''],
