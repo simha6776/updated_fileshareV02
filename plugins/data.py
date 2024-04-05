@@ -60,7 +60,8 @@ ODD = {
         'Drama_Juniors_Season_5_':['https://graph.org/file/d8b1e16b46a0c6a4850fe.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
         'Lakshmi_Nivasa_':['https://graph.org/file/6306489e3155e6780acc8.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
         'Naagamandala_':['https://graph.org/file/ba8ff993b1c246334692c.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
-  
+        'Shravani_Subramanya_':['https://graph.org/file/85727561500662aaa42dd.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
+      
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
         'Kendasampige_':['https://graph.org/file/62c90177d09f7cf416e6c.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
@@ -141,7 +142,8 @@ EVEN = {
         'Drama_Juniors_Season_5_':['https://graph.org/file/d8b1e16b46a0c6a4850fe.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
         'Lakshmi_Nivasa_':['https://graph.org/file/6306489e3155e6780acc8.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
         'Naagamandala_':['https://graph.org/file/ba8ff993b1c246334692c.jpg','linkshortify.com','ebfeddd3762d5932f82db2f83c1ec2633963bf80',''],
-  
+        'Shravani_Subramanya_':['https://graph.org/file/85727561500662aaa42dd.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
+      
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','publicearn.com','3ef13925ef666590c2d146f6ed02b2c89087aa00',''],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','kingurl.in','e096514a6f0e699170dcf87b7a6aae271f52b86d',''],
         'Kendasampige_':['https://graph.org/file/62c90177d09f7cf416e6c.jpg','linkshortify.com','ebfeddd3762d5932f82db2f83c1ec2633963bf80',''],
