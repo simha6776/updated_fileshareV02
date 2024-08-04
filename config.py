@@ -9,19 +9,19 @@ TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6800381252:AAFr2tnL8YgyaaqeLxELmO
 # TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5872747581:AAH7_XPCOCEVfbgUhepjJWlcOmj8wjDTjBk")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "3393749"))
+APP_ID = int(os.environ.get("APP_ID", "21601506"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "a15a5954a1db54952eebd08ea6c68b71")
+API_HASH = os.environ.get("API_HASH", "917d7ee9417746eb271c29b2cab50646")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001693231644"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002220379864"))
 
 #Your log channel Id
-LOG_ID = int(os.environ.get("LOG_ID", "-1001881799737"))
+LOG_ID = int(os.environ.get("LOG_ID", "-1002147508728"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1895902057"))
 
 # #shortenr
 # API = environ.get('API','eedc409c6457b8c783019e990dde8fd531b58eca')
@@ -29,8 +29,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Jayanna:Jayanna2023@yash.tm1c2bd.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "New_Divya_Spandana")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://pavanshettyischamp:<password>@cluster0.k194cqg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
@@ -41,7 +41,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1365052525 5963138883").split()):
+    for x in (os.environ.get("ADMINS", "1895902057").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -50,7 +50,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b><code>{filename}</code> \n\n𝐉𝐨𝐢𝐧 -> <a href='https://telegram.dog/link_serials'>𝐂𝐡𝐚𝐧𝐧𝐞𝐥</a></b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b><code>{filename}</code> \n\n𝐉𝐨𝐢𝐧 -> <a href='https://telegram.dog/kannada_serials_hdd'>𝐂𝐡𝐚𝐧𝐧𝐞𝐥</a></b>")
 
 #shortner
 # SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
@@ -99,7 +99,7 @@ FOMET = """
 ♡○♡○♡●♡○♡○♡●♡○♡○♡●♡○♡○♡
 
                   𝑈𝙥𝙻𝐨ɐ𝘥𝕖𝘥 𝙱𝘆👇
-⭑⭑⭑★✪ @Dj_Serials_Bot ✪★⭑⭑⭑
+⭑⭑⭑★✪ @Day_serials_bot ✪★⭑⭑⭑
 
                         {}
 
@@ -107,5 +107,5 @@ FOMET = """
 {}
 {}
 
-𝐡𝔬𝘸  𝗧𝐨  𝑫๏𝒘𝗻𝙻๏d - @how_view
+𝐡𝔬𝘸  𝗧𝐨  𝑫๏𝒘𝗻𝙻๏d - @how_view_video
   """
