@@ -15,7 +15,7 @@ import string
 import re
 
 
-SAPI = "c5dbea7703b576144630660355aaa3dbd3a59cc5"
+SAPI = "05ebda0afa1808ba0ccec76e789a0bc76740d558"
 SSLINK = "upshrink.com"
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
