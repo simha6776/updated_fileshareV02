@@ -106,7 +106,7 @@ async def channel_post(client: Client, message: Message):
     await asyncio.sleep(1)
 
     await bot_msg.edit("Poster sent successfully...!")
-    e_pic = await client.send_photo(chat_id=int(-1002229407563), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
+    e_pic = await client.send_photo(chat_id=int(-1002155871522), photo=pic, caption= FOMET.format(DATEDAY[-1], Slink, Slink))
     #await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[0]))
     await bot_msg.edit(BOTEFITMSG.format(filname, Tlink, Slink, DATEDAY[0]))
     
