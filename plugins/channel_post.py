@@ -30,7 +30,7 @@ async def channel_post(client: Client, message: Message):
     media = message.video or message.document
     # filname= media.file_name.split("S0")[0]#[1][2]etc
     ############# FOR UTSAV BOT ##################
-    filname = re.split("S\d", media.file_name)[0]#[1][2]etc
+    filname = re.split(r"S\d", media.file_name)[0]#[1][2]etc
     ############# FOR DS BOT ##################
     #filname = re.split(current_time.strftime("%B"), media.file_name)[0]#[1][2]etc
     #botfsno= re.findall("S0.+E\d+\d", media.file_name)
