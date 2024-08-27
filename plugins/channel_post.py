@@ -15,8 +15,8 @@ import string
 import re
 
 
-SAPI = "05ebda0afa1808ba0ccec76e789a0bc76740d558"
-SSLINK = "upshrink.com"
+SAPI = "3e2c0a75d062e5bb8976ddd106824d49a7b7ecf4"
+SSLINK = "seturl.in"
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
     dat = await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
